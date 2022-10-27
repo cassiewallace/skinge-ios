@@ -12,11 +12,24 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List(skis, id: \.id) { ski in
-                Text(ski.name)
-            }
-            .task {
-                await loadSkis()
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Skis")
+                    .font(.title)
+                    .bold()
+                List(skis, id: \.id) { ski in
+                    VStack(alignment: .leading) {
+                        Text(ski.brand.name)
+                            .italic()
+                        Text(ski.name)
+                            .font(.headline)
+                    }
+                }
+                .scrollContentBackground(.hidden)
+                .frame(maxWidth: .infinity)
+                .listStyle(SidebarListStyle())
+                .task {
+                    await loadSkis()
+                }
             }
             .navigationBarTitle("Skinge", displayMode: .inline)
         }
