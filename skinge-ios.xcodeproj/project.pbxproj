@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
+		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
+		CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE789290AEDD000BE850B /* Constants.swift */; };
+		CBBEE78D290AF19D00BE850B /* SkisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE78C290AF19D00BE850B /* SkisViewModel.swift */; };
 		CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */; };
 		CBCF5D72290AD5E3000965FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D71290AD5E3000965FF /* ContentView.swift */; };
 		CBCF5D74290AD5E6000965FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF5D73290AD5E6000965FF /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 		CBCF5D81290AD5E6000965FF /* skinge_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D80290AD5E6000965FF /* skinge_iosTests.swift */; };
 		CBCF5D8B290AD5E7000965FF /* skinge_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D8A290AD5E7000965FF /* skinge_iosUITests.swift */; };
 		CBCF5D8D290AD5E7000965FF /* skinge_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D8C290AD5E7000965FF /* skinge_iosUITestsLaunchTests.swift */; };
+		CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D9E290ADD53000965FF /* Ski.swift */; };
+		CBCF5DA1290ADE4E000965FF /* SkiVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */; };
+		CBCF5DA5290AE0D8000965FF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5DA4290AE0D8000965FF /* Product.swift */; };
+		CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5DA8290AE3AC000965FF /* Brand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBBEE78C290AF19D00BE850B /* SkisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkisViewModel.swift; sourceTree = "<group>"; };
 		CBCF5D6C290AD5E3000965FF /* skinge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skinge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skinge_iosApp.swift; sourceTree = "<group>"; };
 		CBCF5D71290AD5E3000965FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +56,10 @@
 		CBCF5D86290AD5E7000965FF /* skinge-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skinge-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCF5D8A290AD5E7000965FF /* skinge_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skinge_iosUITests.swift; sourceTree = "<group>"; };
 		CBCF5D8C290AD5E7000965FF /* skinge_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skinge_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBCF5D9E290ADD53000965FF /* Ski.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ski.swift; sourceTree = "<group>"; };
+		CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiVariant.swift; sourceTree = "<group>"; };
+		CBCF5DA4290AE0D8000965FF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CBCF5DA8290AE3AC000965FF /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBBEE78B290AF12E00BE850B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEE78C290AF19D00BE850B /* SkisViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		CBCF5D63290AD5E3000965FF = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +118,9 @@
 		CBCF5D6E290AD5E3000965FF /* skinge-ios */ = {
 			isa = PBXGroup;
 			children = (
-				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
-				CBCF5D71290AD5E3000965FF /* ContentView.swift */,
-				CBCF5D73290AD5E6000965FF /* Assets.xcassets */,
-				CBCF5D75290AD5E6000965FF /* Preview Content */,
+				CBBEE78B290AF12E00BE850B /* ViewModels */,
+				CBCF5D9C290ADD13000965FF /* Src */,
+				CBCF5D9B290ADCEB000965FF /* Resources */,
 			);
 			path = "skinge-ios";
 			sourceTree = "<group>";
@@ -125,6 +148,55 @@
 				CBCF5D8C290AD5E7000965FF /* skinge_iosUITestsLaunchTests.swift */,
 			);
 			path = "skinge-iosUITests";
+			sourceTree = "<group>";
+		};
+		CBCF5D99290ADCA8000965FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF5D71290AD5E3000965FF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBCF5D9A290ADCBE000965FF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEE785290AED1600BE850B /* HTTPClient.swift */,
+				CBBEE787290AED9600BE850B /* DataStore.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CBCF5D9B290ADCEB000965FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF5D73290AD5E6000965FF /* Assets.xcassets */,
+				CBCF5D75290AD5E6000965FF /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBCF5D9C290ADD13000965FF /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF5D9D290ADD31000965FF /* Models */,
+				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
+				CBCF5D99290ADCA8000965FF /* Views */,
+				CBCF5D9A290ADCBE000965FF /* Utilities */,
+				CBBEE789290AEDD000BE850B /* Constants.swift */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		CBCF5D9D290ADD31000965FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
+				CBCF5DA4290AE0D8000965FF /* Product.swift */,
+				CBCF5DA8290AE3AC000965FF /* Brand.swift */,
+				CBCF5D9E290ADD53000965FF /* Ski.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBEE78D290AF19D00BE850B /* SkisViewModel.swift in Sources */,
 				CBCF5D72290AD5E3000965FF /* ContentView.swift in Sources */,
+				CBBEE788290AED9600BE850B /* DataStore.swift in Sources */,
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
+				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
+				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
+				CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */,
+				CBCF5DA1290ADE4E000965FF /* SkiVariant.swift in Sources */,
+				CBCF5DA5290AE0D8000965FF /* Product.swift in Sources */,
+				CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"skinge-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"skinge-ios/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = BXF2Y7X5P8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +525,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"skinge-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"skinge-ios/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = BXF2Y7X5P8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
