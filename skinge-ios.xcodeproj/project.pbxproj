@@ -10,7 +10,7 @@
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
 		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
 		CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE789290AEDD000BE850B /* Constants.swift */; };
-		CBBEE792290B2A6200BE850B /* SkisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE791290B2A6200BE850B /* SkisViewModel.swift */; };
+		CBBEE792290B2A6200BE850B /* SkisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE791290B2A6200BE850B /* SkisList.swift */; };
 		CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */; };
 		CBCF5D72290AD5E3000965FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D71290AD5E3000965FF /* ContentView.swift */; };
 		CBCF5D74290AD5E6000965FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF5D73290AD5E6000965FF /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CBBEE791290B2A6200BE850B /* SkisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkisViewModel.swift; sourceTree = "<group>"; };
+		CBBEE791290B2A6200BE850B /* SkisList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkisList.swift; sourceTree = "<group>"; };
 		CBCF5D6C290AD5E3000965FF /* skinge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skinge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skinge_iosApp.swift; sourceTree = "<group>"; };
 		CBCF5D71290AD5E3000965FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		CBBEE790290B2A6200BE850B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CBBEE791290B2A6200BE850B /* SkisViewModel.swift */,
+				CBBEE791290B2A6200BE850B /* SkisList.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBEE792290B2A6200BE850B /* SkisViewModel.swift in Sources */,
+				CBBEE792290B2A6200BE850B /* SkisList.swift in Sources */,
 				CBCF5D72290AD5E3000965FF /* ContentView.swift in Sources */,
 				CBBEE788290AED9600BE850B /* DataStore.swift in Sources */,
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,

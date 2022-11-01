@@ -8,15 +8,28 @@
 import Foundation
 
 class SkisViewModel: ObservableObject {
-    @Published var skis = [Ski]()
 
+    // MARK: - Public Variables
+    
+    @Published var skis = [Ski]()
+    
+    // MARK: Init(s)
+    
+    init() {
+        getSkis()
+    }
+    
+    // MARK: - Public Functions
+    
     func getSkis() {
         DataStore.getSkis { skis in
             guard let skis = skis else {
                 print("Something went wrong.")
                 return
             }
-            self.skis = skis
+            DispatchQueue.main.async {
+                self.skis = skis
+            }
         }
         print(skis)
     }
