@@ -25,7 +25,6 @@ class SkisViewModel: ObservableObject {
     func getSkis() {
         DataStore.getSkis { skis in
             guard let skis = skis else {
-                print("Something went wrong.")
                 self.error = true
                 return
             }
