@@ -12,6 +12,8 @@ struct ContentView: View {
     // MARK: - Public Variables
     
     @ObservedObject var skisList: SkisViewModel
+    
+    // MARK: - Body
 
     var body: some View {
         NavigationView {
@@ -29,12 +31,11 @@ struct ContentView: View {
                 }
                 .scrollContentBackground(.hidden)
                 .frame(maxWidth: .infinity)
-                .listStyle(SidebarListStyle())
-                // .task {
-                //     await skisList.skis
-                // }
             }
             .navigationBarTitle("Skinge", displayMode: .inline)
+        }
+        .alert("Something went wrong", isPresented: $skisList.error) {
+            Button("OK") { }
         }
         .padding()
     }

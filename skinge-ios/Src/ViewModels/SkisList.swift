@@ -12,6 +12,7 @@ class SkisViewModel: ObservableObject {
     // MARK: - Public Variables
     
     @Published var skis = [Ski]()
+    @Published var error = false
     
     // MARK: Init(s)
     
@@ -25,6 +26,7 @@ class SkisViewModel: ObservableObject {
         DataStore.getSkis { skis in
             guard let skis = skis else {
                 print("Something went wrong.")
+                self.error = true
                 return
             }
             DispatchQueue.main.async {

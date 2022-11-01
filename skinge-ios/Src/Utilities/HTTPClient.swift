@@ -25,8 +25,7 @@ class HTTPClient {
         
         var request = URLRequest(url: url)
         request.httpMethod = HTTPMethods.GET.rawValue
-        request.setValue("Bearer ",
-            forHTTPHeaderField: "Authorization")
+        request.setValue(Constants.API.apiKey, forHTTPHeaderField: "Authorization")
             
         let sharedSession = URLSession.shared
         
