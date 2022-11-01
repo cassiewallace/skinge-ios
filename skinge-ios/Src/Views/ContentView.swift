@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var skis = [Ski]()
+
+    // MARK: - Public Variables
+    
+    @ObservedObject var skisList: SkisViewModel
+    
+    // MARK: - Body
 
     var body: some View {
         NavigationView {
@@ -16,7 +21,7 @@ struct ContentView: View {
                 Text("Skis")
                     .font(.title)
                     .bold()
-                List(skis, id: \.id) { ski in
+                List(skisList.skis, id: \.id) { ski in
                     VStack(alignment: .leading) {
                         Text(ski.brand.name)
                             .italic()
@@ -26,30 +31,22 @@ struct ContentView: View {
                 }
                 .scrollContentBackground(.hidden)
                 .frame(maxWidth: .infinity)
-                .listStyle(SidebarListStyle())
-                .task {
-                    await loadSkis()
-                }
             }
             .navigationBarTitle("Skinge", displayMode: .inline)
         }
-        .padding()
-    }
-    
-    func loadSkis() async {
-        DataStore.getSkis { skis in
-            guard let skis = skis else {
-                print("Something went wrong.")
-                return
-            }
-            self.skis = skis
+        .alert("Something went wrong", isPresented: $skisList.error) {
+            Button("OK") { }
         }
+        .padding()
     }
 
 }
 
+// MARK: Previews
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let skisList = SkisViewModel()
+        ContentView(skisList: skisList)
     }
 }

@@ -7,6 +7,14 @@
 
 import Foundation
 
+enum HTTPMethods: String {
+    case DELETE = "DELETE"
+    case GET = "GET"
+    case PATCH = "PATCH"
+    case POST = "POST"
+    case PUT = "PUT"
+}
+
 class HTTPClient {
     
     // MARK: - Class Methods
@@ -16,22 +24,24 @@ class HTTPClient {
         guard let url = URL(string: url) else { return }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.setValue("Bearer [REDACTED]",
-            forHTTPHeaderField: "Authorization")
+        request.httpMethod = HTTPMethods.GET.rawValue
+        request.setValue(Constants.API.apiKey, forHTTPHeaderField: "Authorization")
+            
+        let sharedSession = URLSession.shared
         
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            do {
-                if let jsonData = data {
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    let typedObject: T? = try decoder.decode(T.self, from: jsonData)
-                    completionHandler(typedObject)
+        let dataTask = sharedSession.dataTask(with: request) {
+            (data, response, error) in
+                do {
+                    if let jsonData = data {
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                        let typedObject: T? = try decoder.decode(T.self, from: jsonData)
+                        completionHandler(typedObject)
+                    }
                 }
-            }
-            catch {
-                print(error)
-            }
+                catch {
+                    print(error)
+                }
         }
         
         dataTask.resume()

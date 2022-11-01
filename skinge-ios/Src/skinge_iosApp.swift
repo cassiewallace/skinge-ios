@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct skinge_iosApp: App {
+    private let skisList = SkisViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(skisList: skisList)
         }
     }
 }
