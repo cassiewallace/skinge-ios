@@ -24,13 +24,18 @@ struct SkiDetailView: View {
     // MARK: - Body
     
     var body: some View {
-        VStack {
-            Text(ski.year)
-            Text(ski.brand.name)
-            Text(ski.name)
+        VStack(alignment: .leading, spacing: 5) {
+            Text("\(ski.year) \(ski.brand.name)")
+            Text(ski.name).font(.largeTitle)
             Text(ski.recommendedUse ?? "")
-            Text(ski.warranty ?? "")
-            Text(ski.womensSpecific ?? false ? "Women's Specific" : "")
+                .font(.caption)
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .padding(5)
+                .background(.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 10.0))
+            Text("Warranty: \(ski.warranty ?? "")")
+            Text("Womens Specific: \(ski.womensSpecific ?? false ? "Yes" : "No")")
         }
         .navigationTitle(skiFullName)
         .navigationBarTitleDisplayMode(.inline)

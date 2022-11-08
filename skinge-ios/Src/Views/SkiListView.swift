@@ -21,6 +21,7 @@ struct SkiListView: View {
                 Text("Skis")
                     .font(.title)
                     .bold()
+                    .padding()
                 List(skisList.skis, id: \.id) { ski in
                     NavigationLink(destination: SkiDetailView(ski: ski)) {
                         VStack(alignment: .leading) {
@@ -33,13 +34,14 @@ struct SkiListView: View {
                 }
                 .scrollContentBackground(.hidden)
                 .frame(maxWidth: .infinity)
+                .listStyle(PlainListStyle())
             }
             .navigationBarTitle("Skinge", displayMode: .inline)
         }
+        // .edgesIgnoringSafeArea(.all)
         .alert("Something went wrong", isPresented: $skisList.error) {
             Button("OK") { }
         }
-        .padding()
     }
 
 }
