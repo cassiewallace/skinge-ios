@@ -13,7 +13,7 @@ struct skinge_iosApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(skisList: skisList)
+            SkiListView(skisList: skisList)
         }
     }
 }
