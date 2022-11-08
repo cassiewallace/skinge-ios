@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SkiListView.swift
 //  skinge-ios
 //
 //  Created by Cassie Wallace on 10/27/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SkiListView: View {
 
     // MARK: - Public Variables
     
@@ -21,32 +21,36 @@ struct ContentView: View {
                 Text("Skis")
                     .font(.title)
                     .bold()
+                    .padding()
                 List(skisList.skis, id: \.id) { ski in
-                    VStack(alignment: .leading) {
-                        Text(ski.brand.name)
-                            .italic()
-                        Text(ski.name)
-                            .font(.headline)
+                    NavigationLink(destination: SkiDetailView(ski: ski)) {
+                        VStack(alignment: .leading) {
+                            Text(ski.brand.name)
+                                .italic()
+                            Text(ski.name)
+                                .font(.headline)
+                        }
                     }
                 }
                 .scrollContentBackground(.hidden)
                 .frame(maxWidth: .infinity)
+                .listStyle(PlainListStyle())
             }
             .navigationBarTitle("Skinge", displayMode: .inline)
         }
+        // .edgesIgnoringSafeArea(.all)
         .alert("Something went wrong", isPresented: $skisList.error) {
             Button("OK") { }
         }
-        .padding()
     }
 
 }
 
 // MARK: Previews
 
-struct ContentView_Previews: PreviewProvider {
+struct SkiListView_Previews: PreviewProvider {
     static var previews: some View {
         let skisList = SkisViewModel()
-        ContentView(skisList: skisList)
+        SkiListView(skisList: skisList)
     }
 }

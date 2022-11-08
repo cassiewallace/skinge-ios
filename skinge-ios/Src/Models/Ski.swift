@@ -14,9 +14,10 @@ struct Ski: Product, Codable {
     var year: String
     var brand: Brand
     var name: String
-    var description: String
-    var recommendedUse: String
-    var warranty: String
+    var description: String?
+    var recommendedUse: String?
+    var warranty: String?
+    var womensSpecific: Bool?
     var id: Int
     // var variants: [SkiVariant]
     
