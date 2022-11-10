@@ -8,18 +8,18 @@
 import Foundation
 
 enum HTTPMethods: String {
-    case DELETE = "DELETE"
-    case GET = "GET"
-    case PATCH = "PATCH"
-    case POST = "POST"
-    case PUT = "PUT"
+    case DELETE
+    case GET
+    case PATCH
+    case POST
+    case PUT
 }
 
 class HTTPClient {
     
-    // MARK: - Class Methods
+    // MARK: - Methods
     
-    // Make a GET request from a URL.
+    // Make a GET request from a URL and decode the result.
     static func get<T: Decodable>(url: String, completionHandler: @escaping (T?) -> Void) {
         guard let url = URL(string: url) else { return }
         

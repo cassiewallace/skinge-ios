@@ -38,7 +38,6 @@ struct SkiListView: View {
             }
             .navigationBarTitle("Skinge", displayMode: .inline)
         }
-        // .edgesIgnoringSafeArea(.all)
         .alert("Something went wrong", isPresented: $skisList.error) {
             Button("OK") { }
         }
