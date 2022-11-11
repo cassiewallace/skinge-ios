@@ -1,5 +1,5 @@
 //
-//  SkisViewModel.swift
+//  SkisListViewModel.swift
 //  skinge-ios
 //
 //  Created by Cassie Wallace on 10/27/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SkisViewModel: ObservableObject {
+class SkisListViewModel: ObservableObject {
 
     // MARK: - Public Variables
     

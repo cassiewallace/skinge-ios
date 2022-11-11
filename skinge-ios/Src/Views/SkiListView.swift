@@ -11,7 +11,7 @@ struct SkiListView: View {
 
     // MARK: - Public Variables
     
-    @ObservedObject var skisList: SkisViewModel
+    @ObservedObject var skisList: SkisListViewModel
     
     // MARK: - Body
 
@@ -49,7 +49,7 @@ struct SkiListView: View {
 
 struct SkiListView_Previews: PreviewProvider {
     static var previews: some View {
-        let skisList = SkisViewModel()
+        let skisList = SkisListViewModel()
         SkiListView(skisList: skisList)
     }
 }
