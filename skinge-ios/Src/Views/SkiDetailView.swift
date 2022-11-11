@@ -24,21 +24,41 @@ struct SkiDetailView: View {
     // MARK: - Body
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text("\(ski.year) \(ski.brand.name)")
-            Text(ski.name).font(.largeTitle)
-            Text(ski.recommendedUse ?? "")
-                .font(.caption)
-                .foregroundColor(.white)
-                .fontWeight(.bold)
-                .padding(5)
-                .background(.blue)
-                .clipShape(RoundedRectangle(cornerRadius: 10.0))
-            Text("Warranty: \(ski.warranty ?? "")")
-            Text("Womens Specific: \(ski.womensSpecific ?? false ? "Yes" : "No")")
+        ScrollView {
+            VStack(alignment: .leading, spacing: 5) {
+                Image(systemName: "figure.skiing.downhill")
+                        .resizable()
+                        .frame(width: 300, height: 450)
+                        .foregroundColor(.black)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray))
+                Spacer()
+                Text("\(ski.year) \(ski.brand.name)")
+                Text(ski.name).font(.largeTitle).bold()
+                tags
+                Spacer()
+                Text(ski.description ?? "")
+                Spacer()
+                HStack {
+                    Text("Warranty:").bold()
+                    Text(ski.warranty ?? "")
+                }
+            }
+            .padding()
         }
         .navigationTitle(skiFullName)
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    @ViewBuilder
+    var tags: some View {
+        HStack {
+            Text(ski.recommendedUse ?? "").tagify(color: .blue)
+            if ski.womensSpecific ?? false {
+                Text("Womens Specific").tagify(color: .pink)
+            } else {
+            }
+        }
     }
    
 }

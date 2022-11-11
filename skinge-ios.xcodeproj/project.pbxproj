@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB06E658291B028F004BE837 /* SkiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E657291B028F004BE837 /* SkiDetailView.swift */; };
+		CB9E4846291EDC6200538592 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4845291EDC6200538592 /* Text+Extensions.swift */; };
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
 		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
 		CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE789290AEDD000BE850B /* Constants.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		CB06E657291B028F004BE837 /* SkiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailView.swift; sourceTree = "<group>"; };
+		CB9E4845291EDC6200538592 /* Text+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				CBBEE785290AED1600BE850B /* HTTPClient.swift */,
 				CBBEE787290AED9600BE850B /* DataStore.swift */,
+				CB9E4845291EDC6200538592 /* Text+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				CBCF5D72290AD5E3000965FF /* SkiListView.swift in Sources */,
 				CBBEE788290AED9600BE850B /* DataStore.swift in Sources */,
 				CB06E658291B028F004BE837 /* SkiDetailView.swift in Sources */,
+				CB9E4846291EDC6200538592 /* Text+Extensions.swift in Sources */,
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
 				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
