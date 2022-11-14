@@ -32,7 +32,6 @@ class SkisListViewModel: ObservableObject {
                 self.skis = skis
             }
         }
-        print(skis)
     }
 
 }
