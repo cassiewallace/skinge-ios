@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    // MARK: - Body
+
     var body: some View {
-        VStack(spacing: 10) {
-            Image("skier")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: .infinity)
-            Text("Ski Finder")
-                .font(.largeTitle)
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                Image("skier")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 10)
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("Find your perfect setup")
+                        .font(.title)
+                    Text("See details for hundreds of skis")
+                }
+                .padding()
+                Spacer()
+            }
+            .navigationTitle("Ski Finder")
         }
     }
 }

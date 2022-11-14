@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     // MARK: - Body
     
     var body: some View {
-        TabView {
+        TabView() {
             HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
