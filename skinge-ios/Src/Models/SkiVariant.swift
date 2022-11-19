@@ -12,10 +12,9 @@ struct SkiVariant: Codable {
     // MARK: - Variables
     
     var size: Int
-    var tipWidth: Float
-    var waistWidth: Float
-    var tailWidth: Float
-    var individualWeight: Int
-    var turningRadius: String
-
+    var tipWidth: Float?
+    var waistWidth: Float?
+    var tailWidth: Float?
+    var individualWeight: Int?
+    var turningRadius: String?
 }
