@@ -26,24 +26,29 @@ struct SkiDetailView: View {
                             }
                             .scaledToFit()
                             .frame(width: geo.size.width)
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text("\(ski.year) \(ski.brand.name)")
-                        Text(ski.name).font(.largeTitle).bold()
-                        tags
-                        Spacer()
-                        Text(ski.description ?? "")
-                        Spacer()
-                        HStack {
-                            Text("Warranty:").bold()
-                            Text(ski.warranty ?? "")
-                        }
-                    }
-                    .padding()
+                    skiDetails
+                    skiVariants
                 }
             }
             .navigationTitle("Ski Details")
             .navigationBarTitleDisplayMode(.inline)
         }
+    }
+    
+    var skiDetails: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text("\(ski.year) \(ski.brand.name)")
+            Text(ski.name).font(.largeTitle).bold()
+            tags
+                .padding(.bottom)
+            Text(ski.description ?? "")
+                .padding(.bottom)
+            HStack {
+                Text("Warranty:").bold()
+                Text(ski.warranty ?? "")
+            }
+        }
+        .padding()
     }
     
     @ViewBuilder
@@ -55,6 +60,30 @@ struct SkiDetailView: View {
             } else {
             }
         }
+    }
+    
+    var skiVariants: some View {
+        HStack(alignment: .top) {
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Size")
+                Text("Turning Radius")
+                Text("Tip Width")
+                Text("Waist Width")
+                Text("Individual Weight (g)")
+            }
+            .bold()
+            ForEach(ski.variants, id: \.size) { variant in
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(String(variant.size)).bold()
+                    Text(variant.turningRadius ?? "")
+                    Text(variant.tipWidth?.string ?? "")
+                    Text(variant.waistWidth?.string ?? "")
+                    Text(variant.tailWidth?.string ?? "")
+                    Text(variant.individualWeight?.string ?? "")
+                }
+            }
+        }
+        .padding()
     }
    
 }
