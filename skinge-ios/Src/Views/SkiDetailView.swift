@@ -63,23 +63,29 @@ struct SkiDetailView: View {
     }
     
     var skiVariants: some View {
-        HStack(alignment: .top) {
-            VStack(alignment: .leading, spacing: 5) {
-                Text("Size")
-                Text("Turning Radius")
-                Text("Tip Width")
-                Text("Waist Width")
-                Text("Individual Weight (g)")
-            }
-            .bold()
-            ForEach(ski.variants, id: \.size) { variant in
+        VStack(alignment: .leading, spacing: 5) {
+            Text("Sizes")
+                .font(.title3)
+                .bold()
+            HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(String(variant.size)).bold()
-                    Text(variant.turningRadius ?? "")
-                    Text(variant.tipWidth?.string ?? "")
-                    Text(variant.waistWidth?.string ?? "")
-                    Text(variant.tailWidth?.string ?? "")
-                    Text(variant.individualWeight?.string ?? "")
+                    Text("Size")
+                    Text("Turning Radius")
+                    Text("Tip Width")
+                    Text("Waist Width")
+                    Text("Tail Width")
+                    Text("Individual Weight")
+                }
+                .bold()
+                ForEach(ski.variants, id: \.size) { variant in
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(String(variant.size)).bold()
+                        Text(variant.turningRadius ?? "")
+                        Text(variant.tipWidth?.string ?? "")
+                        Text(variant.waistWidth?.string ?? "")
+                        Text(variant.tailWidth?.string ?? "")
+                        Text(variant.individualWeight?.string ?? "")
+                    }
                 }
             }
         }
