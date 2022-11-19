@@ -11,7 +11,7 @@ class DataStore {
 
     // MARK: - Class Methods
     // Retrieve all skis.
-    static func getSkis(completionHandler: @escaping ([Ski]?) -> Void) {
+    public func getSkis(completionHandler: @escaping ([Ski]?) -> Void) {
         let skisURL = Constants.API.baseURL +
                     Constants.API.productsPath +
                     Constants.API.skisPath

@@ -11,13 +11,13 @@ struct SkiListView: View {
 
     // MARK: - Public Variables
     
-    @ObservedObject var skisList = SkisListViewModel()
+    @ObservedObject var viewModel = SkisListViewModel()
     
     // MARK: - Body
 
     var body: some View {
         NavigationView {
-            List(skisList.skis, id: \.id) { ski in
+            List(viewModel.skis, id: \.id) { ski in
                 NavigationLink(destination: SkiDetailView(ski: ski)) {
                     VStack(alignment: .leading) {
                         Text(ski.brand.name)
@@ -32,8 +32,11 @@ struct SkiListView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("Skis", displayMode: .inline)
         }
-        .alert("Something went wrong", isPresented: $skisList.error) {
+        .alert("Something went wrong", isPresented: $viewModel.error) {
             Button("OK") { }
+        }
+        .onAppear {
+            viewModel.getSkis()
         }
     }
 

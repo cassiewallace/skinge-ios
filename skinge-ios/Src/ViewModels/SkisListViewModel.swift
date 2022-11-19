@@ -13,17 +13,21 @@ class SkisListViewModel: ObservableObject {
     
     @Published var skis = [Ski]()
     @Published var error = false
+
+    // MARK: - Private Variables
+    
+    private var dataStore: DataStore?
     
     // MARK: Init(s)
     
     init() {
-        getSkis()
+        self.dataStore = DataStore()
     }
     
     // MARK: - Public Functions
     
     func getSkis() {
-        DataStore.getSkis { skis in
+        dataStore?.getSkis { skis in
             guard let skis = skis else {
                 self.error = true
                 return
