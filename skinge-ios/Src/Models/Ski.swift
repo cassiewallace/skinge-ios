@@ -12,7 +12,7 @@ struct Ski: Product, Codable {
     // MARK: - Variables
     
     var year: String
-    var brand: Brand
+    var brand: String
     var name: String
     var description: String?
     var recommendedUse: String?

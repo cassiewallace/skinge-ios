@@ -9,6 +9,13 @@ import Foundation
 
 class DataStore {
 
+    enum ProductType {
+        case bindings
+        case boots
+        case skis
+        case skins
+    }
+
     // MARK: - Class Methods
     // Retrieve all skis.
     public func getSkis(completionHandler: @escaping ([Ski]?) -> Void) {

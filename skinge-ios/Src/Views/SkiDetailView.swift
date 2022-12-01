@@ -37,7 +37,7 @@ struct SkiDetailView: View {
     
     var skiDetails: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text("\(ski.year) \(ski.brand.name)")
+            Text("\(ski.year) \(ski.brand)")
             Text(ski.name).font(.largeTitle).bold()
             tags
                 .padding(.bottom)

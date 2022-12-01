@@ -20,7 +20,7 @@ struct SkiListView: View {
             List(viewModel.skis, id: \.id) { ski in
                 NavigationLink(destination: SkiDetailView(ski: ski)) {
                     VStack(alignment: .leading) {
-                        Text(ski.brand.name)
+                        Text(ski.brand)
                             .italic()
                         Text(ski.name)
                             .font(.headline)
