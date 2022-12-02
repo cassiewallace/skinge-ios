@@ -30,7 +30,6 @@ struct SkiListView: View {
             .scrollContentBackground(.hidden)
             .frame(maxWidth: .infinity)
             .listStyle(PlainListStyle())
-            .navigationBarTitle("Skis", displayMode: .inline)
         }
         .alert("Something went wrong", isPresented: $viewModel.error) {
             Button("OK") { }

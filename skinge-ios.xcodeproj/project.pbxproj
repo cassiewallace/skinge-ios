@@ -10,6 +10,7 @@
 		CB06E658291B028F004BE837 /* SkiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E657291B028F004BE837 /* SkiDetailView.swift */; };
 		CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D22B729285DA700C5748D /* Numeric+Extensions.swift */; };
 		CB2D22BB2929588400C5748D /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */; };
+		CB83FB2129397950005863BB /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB2029397950005863BB /* ProductsView.swift */; };
 		CB9E4846291EDC6200538592 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4845291EDC6200538592 /* Text+Extensions.swift */; };
 		CB9E4848291EF6D900538592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4847291EF6D900538592 /* ContentView.swift */; };
 		CB9E484A291EF8E100538592 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4849291EF8E100538592 /* HomeView.swift */; };
@@ -51,6 +52,7 @@
 		CB06E657291B028F004BE837 /* SkiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailView.swift; sourceTree = "<group>"; };
 		CB2D22B729285DA700C5748D /* Numeric+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extensions.swift"; sourceTree = "<group>"; };
 		CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		CB83FB2029397950005863BB /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		CB9E4845291EDC6200538592 /* Text+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
 		CB9E4847291EF6D900538592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB9E4849291EF8E100538592 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				CB06E657291B028F004BE837 /* SkiDetailView.swift */,
 				CB9E4847291EF6D900538592 /* ContentView.swift */,
 				CB9E4849291EF8E100538592 /* HomeView.swift */,
+				CB83FB2029397950005863BB /* ProductsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */,
 				CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */,
 				CBCF5DA1290ADE4E000965FF /* SkiVariant.swift in Sources */,
+				CB83FB2129397950005863BB /* ProductsView.swift in Sources */,
 				CB9E4848291EF6D900538592 /* ContentView.swift in Sources */,
 				CB2D22BB2929588400C5748D /* URLRequest+Extensions.swift in Sources */,
 				CBCF5DA5290AE0D8000965FF /* Product.swift in Sources */,
