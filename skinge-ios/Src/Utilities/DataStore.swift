@@ -9,22 +9,16 @@ import Foundation
 
 class DataStore {
 
-    enum ProductType {
-        case bindings
-        case boots
-        case skis
-        case skins
-    }
-
     // MARK: - Class Methods
-    // Retrieve all skis.
-    public func getSkis(completionHandler: @escaping ([Ski]?) -> Void) {
-        let skisURL = Constants.API.baseURL +
+    // Retrieve all of a particular product.
+    public func getProducts<T: Decodable>(_ productType: Constants.ProductType, completionHandler: @escaping ([T]?) -> Void) {
+        
+        let url = Constants.API.baseURL +
                     Constants.API.productsPath +
-                    Constants.API.skisPath
+                    "/\(productType.rawValue)/"
 
-        HTTPClient.get(url: skisURL) { skis in
-            completionHandler(skis)
+        HTTPClient.get(url: url) { products in
+            completionHandler(products)
             return
         }
     }

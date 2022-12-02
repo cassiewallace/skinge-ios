@@ -27,7 +27,7 @@ class SkisListViewModel: ObservableObject {
     // MARK: - Public Functions
     
     func getSkis() {
-        dataStore?.getSkis { skis in
+        dataStore?.getProducts(Constants.ProductType.skis) { (skis: [Ski]?) in
             guard let skis = skis else {
                 self.error = true
                 return
