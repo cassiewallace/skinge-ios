@@ -47,8 +47,7 @@ struct ProductDetailView: View {
                 }
             }
         }
-        .navigationTitle("\(productType.rawValue.dropLast(1).capitalized) Details")
-        // TODO: Maybe this should be handled in the ViewModel or Enum.
+        .navigationTitle("\(productType.singularRawValue()) Details")
         .navigationBarTitleDisplayMode(.inline)
     }
     

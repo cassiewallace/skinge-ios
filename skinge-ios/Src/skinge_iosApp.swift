@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct skinge_iosApp: App {
-    private let skisList = ProductListViewModel()
     
     var body: some Scene {
         WindowGroup {

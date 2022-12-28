@@ -49,19 +49,19 @@ class ProductListViewModel: ObservableObject {
     }
     
     func getBoots() {
-        getProducts(productType: Constants.ProductType.boots) { (boots: [Boot]) in
+        getProducts(productType: Constants.ProductType.boots) { boots in
             self.boots = boots
         }
     }
     
     func getSkis() {
-        getProducts(productType: Constants.ProductType.skis) { (skis: [Ski]) in
+        getProducts(productType: Constants.ProductType.skis) { skis in
             self.skis = skis
         }
     }
     
     func getSkins() {
-        getProducts(productType: Constants.ProductType.skins) { (skins: [Skin]) in
+        getProducts(productType: Constants.ProductType.skins) { skins in
             self.skins = skins
         }
     }

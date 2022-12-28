@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Product {
+protocol Product: Codable {
 
     // MARK: - Variables
     
