@@ -44,18 +44,16 @@ struct ProductListView: View {
     
     // MARK: - Body
 
-    @ViewBuilder
     var body: some View {
-        
         List(products, id: \.id) { product in
-            // NavigationLink(destination: SkiDetailView(ski: product as! Ski )) {
+            NavigationLink(destination: ProductDetailView(product: product, productType: selectedProductType)) {
                 VStack(alignment: .leading) {
                     Text(product.brand)
                         .italic()
                     Text(product.name)
                         .font(.headline)
                 }
-            // }
+            }
         }
         .scrollContentBackground(.hidden)
         .frame(maxWidth: .infinity)
@@ -63,12 +61,14 @@ struct ProductListView: View {
         .alert("Something went wrong", isPresented: $viewModel.error) {
             Button("OK") { }
         }
+        // TODO: Implementing Combine could enable these to be combined (no pun intended) into `.onReceive`.
         .onAppear {
             getProducts
         }
         .onChange(of: selectedProductType) { _ in
             getProducts
         }
+        
     }
 
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct GearView: View {
 
     @ObservedObject var viewModel = ProductListViewModel()
-    @State var selectedProductType = Constants.ProductType.skins
+    @State var selectedProductType = Constants.ProductType.skis
     
     // MARK: - Body
 

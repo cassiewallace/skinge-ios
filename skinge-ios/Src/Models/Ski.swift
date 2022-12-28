@@ -8,7 +8,7 @@
 import Foundation
 
 struct Ski: Product, Codable {
-
+    
     // MARK: - Variables
     
     var year: String
@@ -18,7 +18,7 @@ struct Ski: Product, Codable {
     var recommendedUse: String?
     var warranty: String?
     var womensSpecific: Bool?
-    var variants: [SkiVariant]
+    var variants: Array<SkiVariant>?
     var id: Int
     
 }

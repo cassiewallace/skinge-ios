@@ -18,7 +18,7 @@ struct Skin: Product, Codable {
     var recommendedUse: String?
     var warranty: String?
     var womensSpecific: Bool?
-    // var variants: [SkiVariant]
+    var variants: [SkinVariant]?
     var id: Int
     
 }

@@ -11,7 +11,6 @@ class ProductListViewModel: ObservableObject {
 
     // MARK: - Public Variables
     
-    // @Published var products = []
     @Published var bindings = [SkiBinding]()
     @Published var boots = [Boot]()
     @Published var skis = [Ski]()
@@ -30,69 +29,40 @@ class ProductListViewModel: ObservableObject {
     
     // MARK: - Public Functions
     
-    // func getProducts<T: Decodable>(productType: Constants.ProductType, model: [T]?) {
-    // 
-    //     dataStore?.getProducts(productType) { (products: [T]?) in
-    //         guard let products = products else {
-    //             self.error = true
-    //             return
-    //         }
-    //         DispatchQueue.main.async {
-    //             self.products = products
-    //         }
-    //     }
-    // }
+    func getProducts<T: Decodable>(productType: Constants.ProductType, completionHandler: @escaping ([T]) -> Void) {
     
-    
-    func getBindings() {
-    
-        dataStore?.getProducts(Constants.ProductType.bindings) { (bindings: [SkiBinding]?) in
-            guard let bindings = bindings else {
+        dataStore?.getProducts(productType) { (products: [T]?) in
+            guard let products = products else {
                 self.error = true
                 return
             }
             DispatchQueue.main.async {
-                self.bindings = bindings
+                completionHandler(products)
             }
+        }
+    }
+    
+    func getBindings() {
+        getProducts(productType: Constants.ProductType.bindings) { bindings in
+            self.bindings = bindings
         }
     }
     
     func getBoots() {
-    
-        dataStore?.getProducts(Constants.ProductType.boots) { (boots: [Boot]?) in
-            guard let boots = boots else {
-                self.error = true
-                return
-            }
-            DispatchQueue.main.async {
-                self.boots = boots
-            }
+        getProducts(productType: Constants.ProductType.boots) { (boots: [Boot]) in
+            self.boots = boots
         }
     }
     
     func getSkis() {
-    
-        dataStore?.getProducts(Constants.ProductType.skis) { (skis: [Ski]?) in
-            guard let skis = skis else {
-                self.error = true
-                return
-            }
-            DispatchQueue.main.async {
-                self.skis = skis
-            }
+        getProducts(productType: Constants.ProductType.skis) { (skis: [Ski]) in
+            self.skis = skis
         }
     }
     
     func getSkins() {
-    
-        dataStore?.getProducts(Constants.ProductType.skins) { (skins: [Skin]?) in
-            guard let skins = skins else {
-                self.error = true
-                return
-            }
-            DispatchQueue.main.async {
-                self.skins = skins
-            }
+        getProducts(productType: Constants.ProductType.skins) { (skins: [Skin]) in
+            self.skins = skins
         }
     }
 

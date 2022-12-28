@@ -18,7 +18,7 @@ struct Boot: Product, Codable {
     var recommendedUse: String?
     var warranty: String?
     var womensSpecific: Bool?
-    // var variants: [BindingVariant]
+    var variants: [BootVariant]?
     var id: Int
     
 }
