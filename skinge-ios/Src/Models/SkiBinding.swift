@@ -1,14 +1,14 @@
 //
-//  Ski.swift
+//  SkiBinding.swift
 //  skinge-ios
 //
-//  Created by Cassie Wallace on 10/27/22.
+//  Created by Cassie Wallace on 12/2/22.
 //
 
 import Foundation
 
-struct Ski: Product, Codable {
-    
+struct SkiBinding: Product, Codable {
+
     // MARK: - Variables
     
     var year: String
@@ -18,7 +18,7 @@ struct Ski: Product, Codable {
     var recommendedUse: String?
     var warranty: String?
     var womensSpecific: Bool?
-    var variants: Array<SkiVariant>?
+    var variants: [SkiBindingVariant]?
     var id: Int
     
 }

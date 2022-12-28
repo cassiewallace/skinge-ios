@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB06E658291B028F004BE837 /* SkiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E657291B028F004BE837 /* SkiDetailView.swift */; };
+		CB06E658291B028F004BE837 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E657291B028F004BE837 /* ProductDetailView.swift */; };
 		CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D22B729285DA700C5748D /* Numeric+Extensions.swift */; };
 		CB2D22BB2929588400C5748D /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */; };
+		CB83FB2129397950005863BB /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB2029397950005863BB /* GearView.swift */; };
+		CB83FB23293A8A8A005863BB /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB22293A8A8A005863BB /* ProductListView.swift */; };
+		CB83FB25293A909E005863BB /* SkiBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB24293A909E005863BB /* SkiBinding.swift */; };
+		CB83FB27293A90CA005863BB /* Boot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB26293A90CA005863BB /* Boot.swift */; };
+		CB83FB29293A9102005863BB /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB28293A9102005863BB /* Skin.swift */; };
 		CB9E4846291EDC6200538592 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4845291EDC6200538592 /* Text+Extensions.swift */; };
 		CB9E4848291EF6D900538592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4847291EF6D900538592 /* ContentView.swift */; };
 		CB9E484A291EF8E100538592 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E4849291EF8E100538592 /* HomeView.swift */; };
+		CBBAE554295CD69900F374F1 /* SkiBindingVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */; };
+		CBBAE556295CD6B200F374F1 /* BootVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE555295CD6B200F374F1 /* BootVariant.swift */; };
+		CBBAE558295CD6C800F374F1 /* SkinVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE557295CD6C800F374F1 /* SkinVariant.swift */; };
+		CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */; };
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
 		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
 		CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE789290AEDD000BE850B /* Constants.swift */; };
-		CBBEE792290B2A6200BE850B /* SkisListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE791290B2A6200BE850B /* SkisListViewModel.swift */; };
+		CBBEE792290B2A6200BE850B /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE791290B2A6200BE850B /* ProductListViewModel.swift */; };
 		CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */; };
-		CBCF5D72290AD5E3000965FF /* SkiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D71290AD5E3000965FF /* SkiListView.swift */; };
 		CBCF5D74290AD5E6000965FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF5D73290AD5E6000965FF /* Assets.xcassets */; };
 		CBCF5D77290AD5E6000965FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF5D76290AD5E6000965FF /* Preview Assets.xcassets */; };
 		CBCF5D81290AD5E6000965FF /* skinge_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5D80290AD5E6000965FF /* skinge_iosTests.swift */; };
@@ -48,19 +56,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB06E657291B028F004BE837 /* SkiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailView.swift; sourceTree = "<group>"; };
+		CB06E657291B028F004BE837 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CB2D22B729285DA700C5748D /* Numeric+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extensions.swift"; sourceTree = "<group>"; };
 		CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		CB83FB2029397950005863BB /* GearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearView.swift; sourceTree = "<group>"; };
+		CB83FB22293A8A8A005863BB /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		CB83FB24293A909E005863BB /* SkiBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiBinding.swift; sourceTree = "<group>"; };
+		CB83FB26293A90CA005863BB /* Boot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boot.swift; sourceTree = "<group>"; };
+		CB83FB28293A9102005863BB /* Skin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
 		CB9E4845291EDC6200538592 /* Text+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
 		CB9E4847291EF6D900538592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB9E4849291EF8E100538592 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiBindingVariant.swift; sourceTree = "<group>"; };
+		CBBAE555295CD6B200F374F1 /* BootVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootVariant.swift; sourceTree = "<group>"; };
+		CBBAE557295CD6C800F374F1 /* SkinVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinVariant.swift; sourceTree = "<group>"; };
+		CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiVariants.swift; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CBBEE791290B2A6200BE850B /* SkisListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkisListViewModel.swift; sourceTree = "<group>"; };
+		CBBEE791290B2A6200BE850B /* ProductListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		CBCF5D6C290AD5E3000965FF /* skinge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skinge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skinge_iosApp.swift; sourceTree = "<group>"; };
-		CBCF5D71290AD5E3000965FF /* SkiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiListView.swift; sourceTree = "<group>"; };
 		CBCF5D73290AD5E6000965FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBCF5D76290AD5E6000965FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBCF5D7C290AD5E6000965FF /* skinge-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skinge-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +128,7 @@
 		CBBEE790290B2A6200BE850B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CBBEE791290B2A6200BE850B /* SkisListViewModel.swift */,
+				CBBEE791290B2A6200BE850B /* ProductListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,10 +190,12 @@
 		CBCF5D99290ADCA8000965FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CBCF5D71290AD5E3000965FF /* SkiListView.swift */,
-				CB06E657291B028F004BE837 /* SkiDetailView.swift */,
 				CB9E4847291EF6D900538592 /* ContentView.swift */,
 				CB9E4849291EF8E100538592 /* HomeView.swift */,
+				CB83FB2029397950005863BB /* GearView.swift */,
+				CB83FB22293A8A8A005863BB /* ProductListView.swift */,
+				CB06E657291B028F004BE837 /* ProductDetailView.swift */,
+				CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,10 +235,16 @@
 		CBCF5D9D290ADD31000965FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
-				CBCF5DA4290AE0D8000965FF /* Product.swift */,
 				CBCF5DA8290AE3AC000965FF /* Brand.swift */,
+				CBCF5DA4290AE0D8000965FF /* Product.swift */,
 				CBCF5D9E290ADD53000965FF /* Ski.swift */,
+				CB83FB28293A9102005863BB /* Skin.swift */,
+				CB83FB26293A90CA005863BB /* Boot.swift */,
+				CB83FB24293A909E005863BB /* SkiBinding.swift */,
+				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
+				CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */,
+				CBBAE555295CD6B200F374F1 /* BootVariant.swift */,
+				CBBAE557295CD6C800F374F1 /* SkinVariant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,22 +379,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBEE792290B2A6200BE850B /* SkisListViewModel.swift in Sources */,
+				CBBEE792290B2A6200BE850B /* ProductListViewModel.swift in Sources */,
+				CBBAE558295CD6C800F374F1 /* SkinVariant.swift in Sources */,
 				CB9E484A291EF8E100538592 /* HomeView.swift in Sources */,
-				CBCF5D72290AD5E3000965FF /* SkiListView.swift in Sources */,
 				CBBEE788290AED9600BE850B /* DataStore.swift in Sources */,
-				CB06E658291B028F004BE837 /* SkiDetailView.swift in Sources */,
+				CB06E658291B028F004BE837 /* ProductDetailView.swift in Sources */,
 				CB9E4846291EDC6200538592 /* Text+Extensions.swift in Sources */,
+				CB83FB23293A8A8A005863BB /* ProductListView.swift in Sources */,
+				CBBAE554295CD69900F374F1 /* SkiBindingVariant.swift in Sources */,
+				CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */,
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
+				CB83FB29293A9102005863BB /* Skin.swift in Sources */,
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
 				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
+				CB83FB25293A909E005863BB /* SkiBinding.swift in Sources */,
 				CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */,
 				CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */,
+				CB83FB27293A90CA005863BB /* Boot.swift in Sources */,
 				CBCF5DA1290ADE4E000965FF /* SkiVariant.swift in Sources */,
+				CB83FB2129397950005863BB /* GearView.swift in Sources */,
 				CB9E4848291EF6D900538592 /* ContentView.swift in Sources */,
 				CB2D22BB2929588400C5748D /* URLRequest+Extensions.swift in Sources */,
 				CBCF5DA5290AE0D8000965FF /* Product.swift in Sources */,
 				CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */,
+				CBBAE556295CD6B200F374F1 /* BootVariant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

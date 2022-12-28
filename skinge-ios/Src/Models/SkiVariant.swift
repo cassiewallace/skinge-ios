@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SkiVariant: Codable {
+struct SkiVariant: Codable, Hashable {
 
     // MARK: - Variables
     
@@ -17,4 +17,5 @@ struct SkiVariant: Codable {
     var tailWidth: Float?
     var individualWeight: Int?
     var turningRadius: String?
+    
 }

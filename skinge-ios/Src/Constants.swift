@@ -12,8 +12,14 @@ struct Constants {
     struct API {
         static let baseURL = "http://localhost:8080"
         static let productsPath = "/products"
-        static let skisPath = "/skis/"
         static let apiKey = "Bearer "
+    }
+    
+    enum ProductType: String, CaseIterable {
+        case skis
+        case bindings
+        case boots
+        case skins
     }
 
 }
