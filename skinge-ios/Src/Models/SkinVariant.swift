@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SkinVariant: ProductVariant, Codable {
+struct SkinVariant: Codable {
 
     // MARK: - Variables
     var size: String?

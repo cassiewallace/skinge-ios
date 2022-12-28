@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SkiBindingVariant: ProductVariant, Codable {
+struct SkiBindingVariant: Codable {
     
     // MARK: - Variables
     var size: String?

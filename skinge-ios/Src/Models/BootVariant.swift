@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BootVariant: ProductVariant, Codable {
+struct BootVariant: Codable {
 
     // MARK: - Variables
     

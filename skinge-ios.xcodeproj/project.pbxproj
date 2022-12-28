@@ -21,7 +21,6 @@
 		CBBAE554295CD69900F374F1 /* SkiBindingVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */; };
 		CBBAE556295CD6B200F374F1 /* BootVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE555295CD6B200F374F1 /* BootVariant.swift */; };
 		CBBAE558295CD6C800F374F1 /* SkinVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE557295CD6C800F374F1 /* SkinVariant.swift */; };
-		CBBAE55A295CDA5200F374F1 /* ProductVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE559295CDA5200F374F1 /* ProductVariant.swift */; };
 		CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */; };
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
 		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
@@ -71,7 +70,6 @@
 		CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiBindingVariant.swift; sourceTree = "<group>"; };
 		CBBAE555295CD6B200F374F1 /* BootVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootVariant.swift; sourceTree = "<group>"; };
 		CBBAE557295CD6C800F374F1 /* SkinVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinVariant.swift; sourceTree = "<group>"; };
-		CBBAE559295CDA5200F374F1 /* ProductVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVariant.swift; sourceTree = "<group>"; };
 		CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiVariants.swift; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 				CB83FB28293A9102005863BB /* Skin.swift */,
 				CB83FB26293A90CA005863BB /* Boot.swift */,
 				CB83FB24293A909E005863BB /* SkiBinding.swift */,
-				CBBAE559295CDA5200F374F1 /* ProductVariant.swift */,
 				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
 				CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */,
 				CBBAE555295CD6B200F374F1 /* BootVariant.swift */,
@@ -396,7 +393,6 @@
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
 				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
 				CB83FB25293A909E005863BB /* SkiBinding.swift in Sources */,
-				CBBAE55A295CDA5200F374F1 /* ProductVariant.swift in Sources */,
 				CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */,
 				CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */,
 				CB83FB27293A90CA005863BB /* Boot.swift in Sources */,
