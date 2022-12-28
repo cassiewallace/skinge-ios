@@ -20,6 +20,11 @@ struct Constants {
         case bindings
         case boots
         case skins
+        
+        func singularRawValue() -> String {
+            return rawValue.dropLast(1).capitalized
+        }
+        
     }
 
 }

@@ -222,9 +222,9 @@
 		CBCF5D9C290ADD13000965FF /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
 				CBBEE790290B2A6200BE850B /* ViewModels */,
 				CBCF5D9D290ADD31000965FF /* Models */,
-				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
 				CBCF5D99290ADCA8000965FF /* Views */,
 				CBCF5D9A290ADCBE000965FF /* Utilities */,
 				CBBEE789290AEDD000BE850B /* Constants.swift */,
