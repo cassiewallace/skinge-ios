@@ -73,6 +73,8 @@
 		CBBAE557295CD6C800F374F1 /* SkinVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinVariant.swift; sourceTree = "<group>"; };
 		CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiVariants.swift; sourceTree = "<group>"; };
 		CBBAE55F295E00FB00F374F1 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		CBBAE561295E3BE600F374F1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		CBBAE562295E482400F374F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -158,8 +160,10 @@
 		CBCF5D6E290AD5E3000965FF /* skinge-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CBBAE562295E482400F374F1 /* Info.plist */,
 				CBCF5D9C290ADD13000965FF /* Src */,
 				CBCF5D9B290ADCEB000965FF /* Resources */,
+				CBBAE561295E3BE600F374F1 /* Development.xcconfig */,
 			);
 			path = "skinge-ios";
 			sourceTree = "<group>";
@@ -445,8 +449,11 @@
 /* Begin XCBuildConfiguration section */
 		CBCF5D8E290AD5E7000965FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBAE561295E3BE600F374F1 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_KEY = "$(API_KEY)";
+				BASE_URL = "$(BASE_URL)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -505,8 +512,11 @@
 		};
 		CBCF5D8F290AD5E7000965FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBAE561295E3BE600F374F1 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_KEY = "$(API_KEY)";
+				BASE_URL = "$(BASE_URL)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -568,6 +578,7 @@
 				DEVELOPMENT_TEAM = BXF2Y7X5P8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "skinge-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -597,6 +608,7 @@
 				DEVELOPMENT_TEAM = BXF2Y7X5P8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "skinge-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
