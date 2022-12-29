@@ -10,9 +10,9 @@ import Foundation
 struct Constants {
 
     struct API {
-        static let baseURL = "http://localhost:8080"
+        static let baseURL = "http://\(Bundle.main.infoDictionary?["BASE_URL"] ?? "")"
         static let productsPath = "/products"
-        static let apiKey = "Bearer "
+        static let apiKey = "\(Bundle.main.infoDictionary?["API_KEY"] ?? "")"
     }
     
     enum ProductType: String, CaseIterable {
