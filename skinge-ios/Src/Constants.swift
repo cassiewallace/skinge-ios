@@ -27,4 +27,11 @@ struct Constants {
         
     }
 
+    enum State {
+        case idle
+        case loading
+        case loaded
+        case failed
+    }
+
 }
