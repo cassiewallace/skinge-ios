@@ -9,8 +9,14 @@ import SwiftUI
 
 struct GearView: View {
 
+    // MARK: - Public Variables
+    
     @ObservedObject var viewModel = ProductListViewModel()
     @State var selectedProductType = Constants.ProductType.skis
+    
+    // MARK: - Private Variables
+    
+    private let productTypes = Constants.ProductType.allCases
     
     // MARK: - Body
 
@@ -18,7 +24,7 @@ struct GearView: View {
         NavigationView {
             VStack {
                 Picker("Product Type", selection: $selectedProductType) {
-                    ForEach(Constants.ProductType.allCases, id: \.self) { type in
+                    ForEach(productTypes, id: \.self) { type in
                         Text(type.rawValue.capitalized)
                     }
                 }
