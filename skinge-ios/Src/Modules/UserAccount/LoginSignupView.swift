@@ -12,13 +12,43 @@ struct LoginSignupView: View {
     // MARK: - Public Variables
     
     @Environment(\.dismiss) var dismiss
+	@State var username: String = ""
+    @State var password: String = ""
+    
+    
+    // MARK: - Private Variables
+    private let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
     // MARK: - Body
     
     var body: some View {
         NavigationView {
-            Text("Form view")
-            .navigationTitle("Log in or sign up")
+            VStack(spacing: 20) {
+                Text("Welcome back!")
+                    .font(.title)
+                TextField("Username", text: $username)
+                    .padding()
+                    .background(lightGreyColor)
+                    .cornerRadius(5.0)
+                SecureField("Password", text: $password)
+                    .padding()
+                    .background(lightGreyColor)
+                    .cornerRadius(5.0)
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Log in")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.pink)
+                        .cornerRadius(5.0)
+                }
+            }
+            .padding()
+            .navigationTitle("Log in")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 Button {
                     dismiss()
