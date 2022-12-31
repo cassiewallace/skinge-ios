@@ -23,6 +23,7 @@
 		CBBAE558295CD6C800F374F1 /* SkinVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE557295CD6C800F374F1 /* SkinVariant.swift */; };
 		CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */; };
 		CBBAE560295E00FB00F374F1 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55F295E00FB00F374F1 /* ErrorView.swift */; };
+		CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE5652960E45000F374F1 /* LoginSignupView.swift */; };
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
 		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
 		CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE789290AEDD000BE850B /* Constants.swift */; };
@@ -75,6 +76,7 @@
 		CBBAE55F295E00FB00F374F1 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		CBBAE561295E3BE600F374F1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		CBBAE562295E482400F374F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CBBAE5652960E45000F374F1 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -129,13 +131,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CBBAE5672960E8C400F374F1 /* Modules */ = {
+		CBBAE5632960E40E00F374F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBBAE5642960E42600F374F1 /* UserAccount */,
 				CBBEE790290B2A6200BE850B /* ProductList */,
 				CBBAE5682960E8CF00F374F1 /* ProductDetail */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		CBBAE5642960E42600F374F1 /* UserAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CBBAE5652960E45000F374F1 /* LoginSignupView.swift */,
+			);
+			path = UserAccount;
 			sourceTree = "<group>";
 		};
 		CBBAE5682960E8CF00F374F1 /* ProductDetail */ = {
@@ -269,6 +280,7 @@
 		CBCF5D9C290ADD13000965FF /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				CBBAE5632960E40E00F374F1 /* Modules */,
 				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
 				CBBAE5672960E8C400F374F1 /* Modules */,
 				CBCF5D99290ADCA8000965FF /* Views */,
@@ -430,6 +442,7 @@
 				CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */,
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
 				CB83FB29293A9102005863BB /* Skin.swift in Sources */,
+				CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */,
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
 				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
 				CB83FB25293A909E005863BB /* SkiBinding.swift in Sources */,
