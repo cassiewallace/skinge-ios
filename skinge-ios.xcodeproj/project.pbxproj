@@ -129,12 +129,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CBBEE790290B2A6200BE850B /* ViewModels */ = {
+		CBBAE5672960E8C400F374F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBBEE790290B2A6200BE850B /* ProductList */,
+				CBBAE5682960E8CF00F374F1 /* ProductDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CBBAE5682960E8CF00F374F1 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CB06E657291B028F004BE837 /* ProductDetailView.swift */,
+				CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		CBBAE5692960E8E700F374F1 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF5DA8290AE3AC000965FF /* Brand.swift */,
+			);
+			path = Brand;
+			sourceTree = "<group>";
+		};
+		CBBAE56A2960E8EF00F374F1 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF5DA4290AE0D8000965FF /* Product.swift */,
+				CBCF5D9E290ADD53000965FF /* Ski.swift */,
+				CB83FB28293A9102005863BB /* Skin.swift */,
+				CB83FB24293A909E005863BB /* SkiBinding.swift */,
+				CB83FB26293A90CA005863BB /* Boot.swift */,
+				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
+				CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */,
+				CBBAE555295CD6B200F374F1 /* BootVariant.swift */,
+				CBBAE557295CD6C800F374F1 /* SkinVariant.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		CBBEE790290B2A6200BE850B /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				CB83FB22293A8A8A005863BB /* ProductListView.swift */,
 				CBBEE791290B2A6200BE850B /* ProductListViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ProductList;
 			sourceTree = "<group>";
 		};
 		CBCF5D63290AD5E3000965FF = {
@@ -199,9 +242,6 @@
 				CB9E4847291EF6D900538592 /* ContentView.swift */,
 				CB9E4849291EF8E100538592 /* HomeView.swift */,
 				CB83FB2029397950005863BB /* GearView.swift */,
-				CB83FB22293A8A8A005863BB /* ProductListView.swift */,
-				CB06E657291B028F004BE837 /* ProductDetailView.swift */,
-				CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */,
 				CBBAE55F295E00FB00F374F1 /* ErrorView.swift */,
 			);
 			path = Views;
@@ -230,9 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
-				CBBEE790290B2A6200BE850B /* ViewModels */,
-				CBCF5D9D290ADD31000965FF /* Models */,
+				CBBAE5672960E8C400F374F1 /* Modules */,
 				CBCF5D99290ADCA8000965FF /* Views */,
+				CBCF5D9D290ADD31000965FF /* Models */,
 				CBCF5D9A290ADCBE000965FF /* Utilities */,
 				CBBEE789290AEDD000BE850B /* Constants.swift */,
 			);
@@ -242,16 +282,8 @@
 		CBCF5D9D290ADD31000965FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CBCF5DA8290AE3AC000965FF /* Brand.swift */,
-				CBCF5DA4290AE0D8000965FF /* Product.swift */,
-				CBCF5D9E290ADD53000965FF /* Ski.swift */,
-				CB83FB28293A9102005863BB /* Skin.swift */,
-				CB83FB26293A90CA005863BB /* Boot.swift */,
-				CB83FB24293A909E005863BB /* SkiBinding.swift */,
-				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
-				CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */,
-				CBBAE555295CD6B200F374F1 /* BootVariant.swift */,
-				CBBAE557295CD6C800F374F1 /* SkinVariant.swift */,
+				CBBAE5692960E8E700F374F1 /* Brand */,
+				CBBAE56A2960E8EF00F374F1 /* Product */,
 			);
 			path = Models;
 			sourceTree = "<group>";
