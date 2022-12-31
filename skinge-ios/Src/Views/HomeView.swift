@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var showingLoginSignupSheet = false
     
     // MARK: - Body
 
@@ -19,15 +20,28 @@ struct HomeView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: .infinity)
                     .padding(.top, 10)
-                VStack(alignment: .leading, spacing: 5) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text("Find your perfect setup")
                         .font(.title)
+                        .bold()
                     Text("See details for hundreds of skis")
                 }
                 .padding()
                 Spacer()
             }
             .navigationTitle("Ski Finder")
+            .toolbar {
+                // TODO: Add conditional logic with 3 states: not logged in
+                Button {
+                    showingLoginSignupSheet.toggle()
+                } label: {
+                    Image(systemName: "person.crop.circle.fill")
+                        .foregroundColor(.black)
+                }
+            }
+            .sheet(isPresented: $showingLoginSignupSheet) {
+                LoginSignupView()
+            }
         }
     }
 }
