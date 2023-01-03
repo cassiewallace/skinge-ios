@@ -11,12 +11,13 @@ struct LoginSignupView: View {
 
     // MARK: - Public Variables
     
+    @ObservedObject var viewModel = LoginSignupViewModel()
     @Environment(\.dismiss) var dismiss
 	@State var username: String = ""
     @State var password: String = ""
     
-    
     // MARK: - Private Variables
+    
     private let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
     // MARK: - Body
@@ -35,6 +36,9 @@ struct LoginSignupView: View {
                     .background(lightGreyColor)
                     .cornerRadius(5.0)
                 Button {
+                    viewModel.login(user: UserCredential(email: "cassbwallace@gmail.com", password: "")) { accessToken in
+                        print(accessToken?.key as Any)
+                    }
                     dismiss()
                 } label: {
                     Text("Log in")

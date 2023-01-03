@@ -35,15 +35,14 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Ski Finder")
-            // TODO: Uncomment account button when log in functionality is completed.
-            // .toolbar {
-            //     Button {
-            //         showingLoginSignupSheet.toggle()
-            //     } label: {
-            //         Image(systemName: "person.crop.circle.fill")
-            //             .foregroundColor(.black)
-            //     }
-            // }
+            .toolbar {
+                Button {
+                    showingLoginSignupSheet.toggle()
+                } label: {
+                    Image(systemName: "person.crop.circle.fill")
+                        .foregroundColor(.black)
+                }
+            }
             .sheet(isPresented: $showingLoginSignupSheet) {
                 LoginSignupView()
             }

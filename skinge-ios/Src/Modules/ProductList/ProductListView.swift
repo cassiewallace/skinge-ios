@@ -11,7 +11,7 @@ struct ProductListView: View {
 
     // MARK: - Public Variables
     
-    @ObservedObject var viewModel: ProductListViewModel
+    @ObservedObject var viewModel = ProductListViewModel()
     @Binding public var selectedProductType: Constants.ProductType
     
     // MARK: - Body

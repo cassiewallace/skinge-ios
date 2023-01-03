@@ -24,6 +24,9 @@
 		CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */; };
 		CBBAE560295E00FB00F374F1 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55F295E00FB00F374F1 /* ErrorView.swift */; };
 		CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE5652960E45000F374F1 /* LoginSignupView.swift */; };
+		CBBAE56D296361E100F374F1 /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE56C296361E100F374F1 /* UserCredential.swift */; };
+		CBBAE56F2963668800F374F1 /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE56E2963668800F374F1 /* LoginSignupViewModel.swift */; };
+		CBBAE5712963786200F374F1 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE5702963786200F374F1 /* AccessToken.swift */; };
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
 		CBBEE788290AED9600BE850B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE787290AED9600BE850B /* DataStore.swift */; };
 		CBBEE78A290AEDD000BE850B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE789290AEDD000BE850B /* Constants.swift */; };
@@ -77,6 +80,9 @@
 		CBBAE561295E3BE600F374F1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		CBBAE562295E482400F374F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CBBAE5652960E45000F374F1 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		CBBAE56C296361E100F374F1 /* UserCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
+		CBBAE56E2963668800F374F1 /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
+		CBBAE5702963786200F374F1 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CBBEE787290AED9600BE850B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CBBEE789290AEDD000BE850B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				CBBAE5652960E45000F374F1 /* LoginSignupView.swift */,
+				CBBAE56E2963668800F374F1 /* LoginSignupViewModel.swift */,
 			);
 			path = UserAccount;
 			sourceTree = "<group>";
@@ -180,6 +187,15 @@
 				CBBAE557295CD6C800F374F1 /* SkinVariant.swift */,
 			);
 			path = Product;
+			sourceTree = "<group>";
+		};
+		CBBAE56B296361C200F374F1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CBBAE56C296361E100F374F1 /* UserCredential.swift */,
+				CBBAE5702963786200F374F1 /* AccessToken.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		CBBEE790290B2A6200BE850B /* ProductList */ = {
@@ -280,9 +296,8 @@
 		CBCF5D9C290ADD13000965FF /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				CBBAE5632960E40E00F374F1 /* Modules */,
 				CBCF5D6F290AD5E3000965FF /* skinge_iosApp.swift */,
-				CBBAE5672960E8C400F374F1 /* Modules */,
+				CBBAE5632960E40E00F374F1 /* Modules */,
 				CBCF5D99290ADCA8000965FF /* Views */,
 				CBCF5D9D290ADD31000965FF /* Models */,
 				CBCF5D9A290ADCBE000965FF /* Utilities */,
@@ -294,6 +309,7 @@
 		CBCF5D9D290ADD31000965FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CBBAE56B296361C200F374F1 /* Authentication */,
 				CBBAE5692960E8E700F374F1 /* Brand */,
 				CBBAE56A2960E8EF00F374F1 /* Product */,
 			);
@@ -430,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBAE5712963786200F374F1 /* AccessToken.swift in Sources */,
 				CBBAE560295E00FB00F374F1 /* ErrorView.swift in Sources */,
 				CBBEE792290B2A6200BE850B /* ProductListViewModel.swift in Sources */,
 				CBBAE558295CD6C800F374F1 /* SkinVariant.swift in Sources */,
@@ -443,8 +460,10 @@
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
 				CB83FB29293A9102005863BB /* Skin.swift in Sources */,
 				CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */,
+				CBBAE56D296361E100F374F1 /* UserCredential.swift in Sources */,
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
 				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
+				CBBAE56F2963668800F374F1 /* LoginSignupViewModel.swift in Sources */,
 				CB83FB25293A909E005863BB /* SkiBinding.swift in Sources */,
 				CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */,
 				CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */,
@@ -624,7 +643,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "skinge-ios/Info.plist";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -654,7 +672,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "skinge-ios/Info.plist";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

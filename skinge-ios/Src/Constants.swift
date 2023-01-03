@@ -11,8 +11,14 @@ struct Constants {
 
     struct API {
         static let baseURL = "http://\(Bundle.main.infoDictionary?["BASE_URL"] ?? "")"
-        static let productsPath = "/products"
         static let apiKey = "\(Bundle.main.infoDictionary?["API_KEY"] ?? "")"
+        static let productsPath = "/products"
+        
+        struct Authentication {
+            static let login = "/auth/login/"
+            static let signup = "/auth/signup/"
+        }
+        
     }
     
     enum ProductType: String, CaseIterable {
