@@ -36,7 +36,7 @@ struct LoginSignupView: View {
                     .background(lightGreyColor)
                     .cornerRadius(5.0)
                 Button {
-                    viewModel.login(user: UserCredential(email: "cassbwallace@gmail.com", password: "C@ssie08!")) { accessToken in
+                    viewModel.login(user: UserCredential(email: "cassbwallace@gmail.com", password: "")) { accessToken in
                         print(accessToken?.key as Any)
                     }
                     dismiss()

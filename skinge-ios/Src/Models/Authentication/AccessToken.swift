@@ -11,7 +11,7 @@ struct AccessToken: Codable {
 
     // MARK: - Variables
     
-    var key: String?
+    var key: String
     
 }
 
