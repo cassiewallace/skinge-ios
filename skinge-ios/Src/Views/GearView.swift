@@ -11,7 +11,6 @@ struct GearView: View {
 
     // MARK: - Public Variables
     
-    @ObservedObject var viewModel = ProductListViewModel()
     @State var selectedProductType = Constants.ProductType.skis
     
     // MARK: - Private Variables
@@ -29,7 +28,7 @@ struct GearView: View {
                     }
                 }
                 .pickerStyle(.segmented)
-                ProductListView(viewModel: viewModel, selectedProductType: $selectedProductType)
+                ProductListView(selectedProductType: $selectedProductType)
                 Spacer()
             }
             .navigationBarTitle("Gear", displayMode: .inline)

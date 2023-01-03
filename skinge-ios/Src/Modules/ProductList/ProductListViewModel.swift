@@ -71,6 +71,7 @@ class ProductListViewModel: ObservableObject {
                 self.state = .loaded
             }
         }
+        
     }
     
     func getBindings() {
