@@ -10,6 +10,8 @@
 		CB06E658291B028F004BE837 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E657291B028F004BE837 /* ProductDetailView.swift */; };
 		CB2D22B829285DA700C5748D /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D22B729285DA700C5748D /* Numeric+Extensions.swift */; };
 		CB2D22BB2929588400C5748D /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */; };
+		CB7E1A03296A087800321564 /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7E1A02296A087800321564 /* KeychainAccess.xcframework */; };
+		CB7E1A04296A087800321564 /* KeychainAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB7E1A02296A087800321564 /* KeychainAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB83FB2129397950005863BB /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB2029397950005863BB /* GearView.swift */; };
 		CB83FB23293A8A8A005863BB /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB22293A8A8A005863BB /* ProductListView.swift */; };
 		CB83FB25293A909E005863BB /* SkiBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83FB24293A909E005863BB /* SkiBinding.swift */; };
@@ -60,10 +62,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB7E1A05296A087800321564 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB7E1A04296A087800321564 /* KeychainAccess.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CB06E657291B028F004BE837 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CB2D22B729285DA700C5748D /* Numeric+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extensions.swift"; sourceTree = "<group>"; };
 		CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		CB7E1A02296A087800321564 /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = Carthage/Build/KeychainAccess.xcframework; sourceTree = "<group>"; };
 		CB83FB2029397950005863BB /* GearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearView.swift; sourceTree = "<group>"; };
 		CB83FB22293A8A8A005863BB /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		CB83FB24293A909E005863BB /* SkiBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiBinding.swift; sourceTree = "<group>"; };
@@ -107,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7E1A03296A087800321564 /* KeychainAccess.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +153,14 @@
 				CB2D22BA2929588400C5748D /* URLRequest+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB7E1A01296A087700321564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7E1A02296A087800321564 /* KeychainAccess.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CBBAE5632960E40E00F374F1 /* Modules */ = {
@@ -214,6 +240,7 @@
 				CBCF5D7F290AD5E6000965FF /* skinge-iosTests */,
 				CBCF5D89290AD5E7000965FF /* skinge-iosUITests */,
 				CBCF5D6D290AD5E3000965FF /* Products */,
+				CB7E1A01296A087700321564 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,6 +353,7 @@
 				CBCF5D68290AD5E3000965FF /* Sources */,
 				CBCF5D69290AD5E3000965FF /* Frameworks */,
 				CBCF5D6A290AD5E3000965FF /* Resources */,
+				CB7E1A05296A087800321564 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

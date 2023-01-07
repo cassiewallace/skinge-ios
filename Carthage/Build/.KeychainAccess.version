@@ -1,0 +1,44 @@
+{
+  "Mac" : [
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "7091f014a9c5e36a193de6ca96ef879ec95602792f468326660fb9da9043dc86",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "5b97efb37372724bc36119be17630a09f334e89bca4fcccbd2bacb1226760ec2",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "e335e445784962e6b00bd9191e6314a428709de98cd644d654d3352583ff1963",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "watchos-arm64_arm64_32_armv7k"
+    }
+  ],
+  "commitish" : "v4.2.2",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "ffe1b56db2f89ae2d129fd4a69d50ce78985ef6f13908f4ce92483d4d10746f4",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "0d5a8385a88b1647f61267a3170a62d32a3c9d5cbd9fa50a6b8bccedb2ba3487",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
