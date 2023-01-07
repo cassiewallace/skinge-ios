@@ -26,7 +26,6 @@ struct LoginSignupView: View {
 
     // MARK: - Body
     
-    @ViewBuilder
     var body: some View {
         NavigationView {
             switch viewModel.userLoginState {
