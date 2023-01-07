@@ -23,7 +23,7 @@ class LoginSignupViewModel: ObservableObject {
     
     // MARK: - Public Functions
     
-    func login(user: UserCredential, completionHandler: @escaping (AccessToken?) -> Void) {
+    func login(_ user: UserCredential, completionHandler: @escaping (AccessToken?) -> Void) {
         state = .loading
     
         dataStore?.login(user) { (response: AccessToken?) in

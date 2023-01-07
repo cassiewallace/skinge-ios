@@ -15,6 +15,12 @@ struct LoginSignupView: View {
     @Environment(\.dismiss) var dismiss
 	@State var username: String = ""
     @State var password: String = ""
+    var user: UserCredential {
+        get {
+            return UserCredential(email: username, password: password)
+        }
+        set {}
+    }
     
     // MARK: - Private Variables
     
@@ -36,7 +42,7 @@ struct LoginSignupView: View {
                     .background(lightGreyColor)
                     .cornerRadius(5.0)
                 Button {
-                    viewModel.login(user: UserCredential(email: "cassbwallace@gmail.com", password: "")) { accessToken in
+                    viewModel.login(user) { accessToken in
                         print(accessToken?.key as Any)
                     }
                     dismiss()
