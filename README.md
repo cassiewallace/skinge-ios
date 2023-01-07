@@ -10,5 +10,5 @@
 
 ## Running the project
 - Clone the repository and switch to the project directory
-- Run `carthage bootstrap`
+- Run `carthage bootstrap --use-xcframeworks`
 - Build
