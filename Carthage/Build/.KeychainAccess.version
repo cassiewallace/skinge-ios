@@ -2,7 +2,7 @@
   "Mac" : [
     {
       "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
-      "hash" : "7091f014a9c5e36a193de6ca96ef879ec95602792f468326660fb9da9043dc86",
+      "hash" : "19c399145e15d9caba0b0c28e69a44f3274f439141747e046d8cc74eb8363059",
       "name" : "KeychainAccess",
       "container" : "KeychainAccess.xcframework",
       "identifier" : "macos-arm64_x86_64"
@@ -11,31 +11,47 @@
   "watchOS" : [
     {
       "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
-      "hash" : "5b97efb37372724bc36119be17630a09f334e89bca4fcccbd2bacb1226760ec2",
-      "name" : "KeychainAccess",
-      "container" : "KeychainAccess.xcframework",
-      "identifier" : "watchos-arm64_i386_x86_64-simulator"
-    },
-    {
-      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
-      "hash" : "e335e445784962e6b00bd9191e6314a428709de98cd644d654d3352583ff1963",
+      "hash" : "d4c1b56c9c56da84834691d8cb561c13baf3019930b8002eae61615b92325988",
       "name" : "KeychainAccess",
       "container" : "KeychainAccess.xcframework",
       "identifier" : "watchos-arm64_arm64_32_armv7k"
+    },
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "3a2138121b23049ae7d2193be31c80faabb5856e7933109c33d38de395979801",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    }
+  ],
+  "tvOS" : [
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "06f997588d7fa9680b7aca98b8ec68087d1c5c9f9f99a80ac9046f4c3d73dca8",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "tvos-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
+      "hash" : "7780e415b3a1f8b3342c7022b5f6933eb7db3a941d2d947effa5798b2ce05062",
+      "name" : "KeychainAccess",
+      "container" : "KeychainAccess.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
     }
   ],
   "commitish" : "v4.2.2",
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
-      "hash" : "ffe1b56db2f89ae2d129fd4a69d50ce78985ef6f13908f4ce92483d4d10746f4",
+      "hash" : "840fcd6a87d32f207272fba47833a45d259e645c467f684d29f89158af380a3c",
       "name" : "KeychainAccess",
       "container" : "KeychainAccess.xcframework",
       "identifier" : "ios-arm64"
     },
     {
       "swiftToolchainVersion" : "5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)",
-      "hash" : "0d5a8385a88b1647f61267a3170a62d32a3c9d5cbd9fa50a6b8bccedb2ba3487",
+      "hash" : "0f647eaf502a46ae8ad935a32e7b0932a013ac246a73ead9baf33b80e5ac1174",
       "name" : "KeychainAccess",
       "container" : "KeychainAccess.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"

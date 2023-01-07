@@ -26,7 +26,7 @@
 		CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55D295CE1CD00F374F1 /* SkiVariants.swift */; };
 		CBBAE560295E00FB00F374F1 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE55F295E00FB00F374F1 /* ErrorView.swift */; };
 		CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE5652960E45000F374F1 /* LoginSignupView.swift */; };
-		CBBAE56D296361E100F374F1 /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE56C296361E100F374F1 /* UserCredential.swift */; };
+		CBBAE56D296361E100F374F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE56C296361E100F374F1 /* User.swift */; };
 		CBBAE56F2963668800F374F1 /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE56E2963668800F374F1 /* LoginSignupViewModel.swift */; };
 		CBBAE5712963786200F374F1 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBAE5702963786200F374F1 /* AccessToken.swift */; };
 		CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE785290AED1600BE850B /* HTTPClient.swift */; };
@@ -97,7 +97,7 @@
 		CBBAE561295E3BE600F374F1 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		CBBAE562295E482400F374F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CBBAE5652960E45000F374F1 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
-		CBBAE56C296361E100F374F1 /* UserCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
+		CBBAE56C296361E100F374F1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CBBAE56E2963668800F374F1 /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
 		CBBAE5702963786200F374F1 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		CBBEE785290AED1600BE850B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		CBBAE56B296361C200F374F1 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				CBBAE56C296361E100F374F1 /* UserCredential.swift */,
+				CBBAE56C296361E100F374F1 /* User.swift */,
 				CBBAE5702963786200F374F1 /* AccessToken.swift */,
 			);
 			path = Authentication;
@@ -488,7 +488,7 @@
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
 				CB83FB29293A9102005863BB /* Skin.swift in Sources */,
 				CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */,
-				CBBAE56D296361E100F374F1 /* UserCredential.swift in Sources */,
+				CBBAE56D296361E100F374F1 /* User.swift in Sources */,
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,
 				CBBEE786290AED1700BE850B /* HTTPClient.swift in Sources */,
 				CBBAE56F2963668800F374F1 /* LoginSignupViewModel.swift in Sources */,
