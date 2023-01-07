@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import KeychainAccess
 
 class LoginSignupViewModel: ObservableObject {
+    
+    // MARK: - Public Variables
+    public let keychain = Keychain(service: "cassiewallace.skinge-ios")
+    @Published var userLoginState: User.LoginState
 
     // MARK: - Private Variables
     
@@ -19,23 +24,31 @@ class LoginSignupViewModel: ObservableObject {
     init() {
         // TODO: Move DataStore to app-wide.
         self.dataStore = DataStore()
+        
+        if (try? keychain.get("skinge-ios-access-token")) != nil {
+            self.userLoginState = .loggedIn
+        } else { self.userLoginState = .loggedOut }
     }
     
     // MARK: - Public Functions
     
-    func login(_ user: UserCredential, completionHandler: @escaping (AccessToken?) -> Void) {
-        state = .loading
-    
+    func login(_ user: User) {
         dataStore?.login(user) { (response: AccessToken?) in
-            guard let response = response else {
+            guard let accessToken = response?.key else {
                 self.state = .failed
                 return
             }
+            
             DispatchQueue.main.async {
-                completionHandler(response)
-                self.state = .loaded
+                self.keychain["skinge-ios-access-token"] = accessToken
+                self.userLoginState = .loggedIn
             }
         }
+    }
+    
+    func logout() {
+        keychain["skinge-ios-access-token"] = nil
+        self.userLoginState = .loggedOut
     }
 
 }

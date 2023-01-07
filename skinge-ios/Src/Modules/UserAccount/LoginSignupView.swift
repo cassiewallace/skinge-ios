@@ -15,11 +15,9 @@ struct LoginSignupView: View {
     @Environment(\.dismiss) var dismiss
 	@State var username: String = ""
     @State var password: String = ""
-    var user: UserCredential {
-        get {
-            return UserCredential(email: username, password: password)
-        }
-        set {}
+    
+    var user: User {
+        get { return User(email: username, password: password) }
     }
     
     // MARK: - Private Variables
@@ -28,47 +26,79 @@ struct LoginSignupView: View {
 
     // MARK: - Body
     
+    @ViewBuilder
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                Text("Welcome back!")
-                    .font(.title)
-                TextField("Username", text: $username)
-                    .padding()
-                    .background(lightGreyColor)
-                    .cornerRadius(5.0)
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(lightGreyColor)
-                    .cornerRadius(5.0)
-                Button {
-                    viewModel.login(user) { accessToken in
-                        print(accessToken?.key as Any)
-                    }
-                    dismiss()
-                } label: {
-                    Text("Log in")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.pink)
-                        .cornerRadius(5.0)
-                }
-            }
-            .padding()
-            .navigationTitle("Log in")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(.black)
-                }
+            switch viewModel.userLoginState {
+            case .loggedIn: logoutView
+            case .loggedOut: loginView
             }
         }
     }
+    
+    var loginView: some View {
+        VStack(spacing: 20) {
+            Text("Welcome back!")
+                .font(.title)
+            TextField("Username", text: $username)
+                .padding()
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+            SecureField("Password", text: $password)
+                .padding()
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+            Button {
+                viewModel.login(user)
+                dismiss()
+            } label: {
+                Text("Log in")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.pink)
+                    .cornerRadius(5.0)
+            }
+        }
+        .padding()
+        .navigationTitle("Log in")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            toolbarDismissButton
+        }
+    }
+    
+    var logoutView: some View {
+        Button {
+            viewModel.logout()
+            dismiss()
+        } label: {
+            Text("Log out")
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.pink)
+                .cornerRadius(5.0)
+        }
+        .padding()
+        .navigationTitle("Log out")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            toolbarDismissButton
+        }
+    }
+    
+    var toolbarDismissButton: some View {
+        Button {
+            dismiss()
+        } label: {
+            Image(systemName: "xmark")
+                .foregroundColor(.black)
+        }
+    }
+    
 }
 
 struct LoginSignupView_Previews: PreviewProvider {
