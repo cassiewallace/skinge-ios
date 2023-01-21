@@ -1,14 +1,13 @@
 //
-//  LoginSignupViewModel.swift
+//  SetupsViewModel.swift
 //  skinge-ios
 //
-//  Created by Cassie Wallace on 1/2/23.
+//  Created by Cassie Wallace on 1/21/23.
 //
 
 import Foundation
-import KeychainAccess
 
-class LoginSignupViewModel: ObservableObject {
+class SetupsViewModel: ObservableObject {
 
     // MARK: - Private Variables
     
@@ -24,18 +23,5 @@ class LoginSignupViewModel: ObservableObject {
         case .loggedOut: userLoginState = .loggedOut
         }
     }
-    
-    func login(_ user: User) {
-        dataStore.login(user) { (response: AccessToken?) in
-            guard let accessToken = response?.key else {
-                self.state = .failed
-                return
-            }
-            self.dataStore.keychain["skinge-ios-access-token"] = accessToken
-        }
-    }
-    
-    func logout() {
-        dataStore.logout()
-    }
+
 }

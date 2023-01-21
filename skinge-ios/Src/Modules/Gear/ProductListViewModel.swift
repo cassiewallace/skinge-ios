@@ -32,14 +32,8 @@ class ProductListViewModel: ObservableObject {
 
     // MARK: - Private Variables
     
-    private var dataStore: DataStore?
+    private var dataStore = DataStore()
     @Published private(set) var state: Constants.State = .idle
-    
-    // MARK: Init(s)
-    
-    init() {
-        self.dataStore = DataStore()
-    }
     
     // MARK: - Public Functions
     
@@ -61,7 +55,7 @@ class ProductListViewModel: ObservableObject {
     func getProducts<T: Decodable>(productType: Constants.ProductType, completionHandler: @escaping ([T]) -> Void) {
         state = .loading
     
-        dataStore?.getProducts(productType) { (products: [T]?) in
+        dataStore.getProducts(productType) { (products: [T]?) in
             guard let products = products else {
                 self.state = .failed
                 return

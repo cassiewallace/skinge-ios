@@ -14,4 +14,3 @@ struct AccessToken: Codable {
     var key: String
     
 }
-

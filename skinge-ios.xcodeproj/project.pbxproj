@@ -43,6 +43,11 @@
 		CBCF5DA1290ADE4E000965FF /* SkiVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */; };
 		CBCF5DA5290AE0D8000965FF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5DA4290AE0D8000965FF /* Product.swift */; };
 		CBCF5DA9290AE3AD000965FF /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF5DA8290AE3AC000965FF /* Brand.swift */; };
+		CBF0EA442979ED59002452C9 /* SetupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA432979ED59002452C9 /* SetupsView.swift */; };
+		CBF0EA482979F02B002452C9 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA472979F02B002452C9 /* Setup.swift */; };
+		CBF0EA4A2979F343002452C9 /* ProductVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA492979F343002452C9 /* ProductVariant.swift */; };
+		CBF0EA4C297A0B08002452C9 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA4B297A0B08002452C9 /* UserSettings.swift */; };
+		CBF0EA4E297C5440002452C9 /* SetupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA4D297C5440002452C9 /* SetupsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,11 @@
 		CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiVariant.swift; sourceTree = "<group>"; };
 		CBCF5DA4290AE0D8000965FF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CBCF5DA8290AE3AC000965FF /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		CBF0EA432979ED59002452C9 /* SetupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupsView.swift; sourceTree = "<group>"; };
+		CBF0EA472979F02B002452C9 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		CBF0EA492979F343002452C9 /* ProductVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVariant.swift; sourceTree = "<group>"; };
+		CBF0EA4B297A0B08002452C9 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		CBF0EA4D297C5440002452C9 /* SetupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +176,11 @@
 		CBBAE5632960E40E00F374F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CBBAE5642960E42600F374F1 /* UserAccount */,
-				CBBEE790290B2A6200BE850B /* ProductList */,
+				CBF0EA452979EF00002452C9 /* Home */,
+				CBF0EA422979ED34002452C9 /* Setups */,
+				CBBEE790290B2A6200BE850B /* Gear */,
 				CBBAE5682960E8CF00F374F1 /* ProductDetail */,
+				CBBAE5642960E42600F374F1 /* UserAccount */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -207,6 +219,7 @@
 				CB83FB28293A9102005863BB /* Skin.swift */,
 				CB83FB24293A909E005863BB /* SkiBinding.swift */,
 				CB83FB26293A90CA005863BB /* Boot.swift */,
+				CBF0EA492979F343002452C9 /* ProductVariant.swift */,
 				CBCF5DA0290ADE4E000965FF /* SkiVariant.swift */,
 				CBBAE553295CD69900F374F1 /* SkiBindingVariant.swift */,
 				CBBAE555295CD6B200F374F1 /* BootVariant.swift */,
@@ -224,13 +237,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		CBBEE790290B2A6200BE850B /* ProductList */ = {
+		CBBEE790290B2A6200BE850B /* Gear */ = {
 			isa = PBXGroup;
 			children = (
+				CB83FB2029397950005863BB /* GearView.swift */,
 				CB83FB22293A8A8A005863BB /* ProductListView.swift */,
 				CBBEE791290B2A6200BE850B /* ProductListViewModel.swift */,
 			);
-			path = ProductList;
+			path = Gear;
 			sourceTree = "<group>";
 		};
 		CBCF5D63290AD5E3000965FF = {
@@ -294,8 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				CB9E4847291EF6D900538592 /* ContentView.swift */,
-				CB9E4849291EF8E100538592 /* HomeView.swift */,
-				CB83FB2029397950005863BB /* GearView.swift */,
 				CBBAE55F295E00FB00F374F1 /* ErrorView.swift */,
 			);
 			path = Views;
@@ -306,6 +318,7 @@
 			children = (
 				CBBEE785290AED1600BE850B /* HTTPClient.swift */,
 				CBBEE787290AED9600BE850B /* DataStore.swift */,
+				CBF0EA4B297A0B08002452C9 /* UserSettings.swift */,
 				CB2D22B92929587300C5748D /* Extensions */,
 			);
 			path = Utilities;
@@ -339,8 +352,34 @@
 				CBBAE56B296361C200F374F1 /* Authentication */,
 				CBBAE5692960E8E700F374F1 /* Brand */,
 				CBBAE56A2960E8EF00F374F1 /* Product */,
+				CBF0EA462979EFCE002452C9 /* Setups */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CBF0EA422979ED34002452C9 /* Setups */ = {
+			isa = PBXGroup;
+			children = (
+				CBF0EA432979ED59002452C9 /* SetupsView.swift */,
+				CBF0EA4D297C5440002452C9 /* SetupsViewModel.swift */,
+			);
+			path = Setups;
+			sourceTree = "<group>";
+		};
+		CBF0EA452979EF00002452C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB9E4849291EF8E100538592 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CBF0EA462979EFCE002452C9 /* Setups */ = {
+			isa = PBXGroup;
+			children = (
+				CBF0EA472979F02B002452C9 /* Setup.swift */,
+			);
+			path = Setups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,17 +515,22 @@
 			files = (
 				CBBAE5712963786200F374F1 /* AccessToken.swift in Sources */,
 				CBBAE560295E00FB00F374F1 /* ErrorView.swift in Sources */,
+				CBF0EA482979F02B002452C9 /* Setup.swift in Sources */,
 				CBBEE792290B2A6200BE850B /* ProductListViewModel.swift in Sources */,
 				CBBAE558295CD6C800F374F1 /* SkinVariant.swift in Sources */,
+				CBF0EA4A2979F343002452C9 /* ProductVariant.swift in Sources */,
 				CB9E484A291EF8E100538592 /* HomeView.swift in Sources */,
 				CBBEE788290AED9600BE850B /* DataStore.swift in Sources */,
 				CB06E658291B028F004BE837 /* ProductDetailView.swift in Sources */,
 				CB9E4846291EDC6200538592 /* Text+Extensions.swift in Sources */,
+				CBF0EA4C297A0B08002452C9 /* UserSettings.swift in Sources */,
 				CB83FB23293A8A8A005863BB /* ProductListView.swift in Sources */,
 				CBBAE554295CD69900F374F1 /* SkiBindingVariant.swift in Sources */,
 				CBBAE55E295CE1CD00F374F1 /* SkiVariants.swift in Sources */,
+				CBF0EA4E297C5440002452C9 /* SetupsViewModel.swift in Sources */,
 				CBCF5D70290AD5E3000965FF /* skinge_iosApp.swift in Sources */,
 				CB83FB29293A9102005863BB /* Skin.swift in Sources */,
+				CBF0EA442979ED59002452C9 /* SetupsView.swift in Sources */,
 				CBBAE5662960E45000F374F1 /* LoginSignupView.swift in Sources */,
 				CBBAE56D296361E100F374F1 /* User.swift in Sources */,
 				CBCF5D9F290ADD53000965FF /* Ski.swift in Sources */,

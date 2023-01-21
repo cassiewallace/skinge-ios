@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
 
+    // MARK: - Public Variables
+    
+    @EnvironmentObject var userSettings: UserSettings
+
     // MARK: - Private Variables
     
     @State private var showingLoginSignupSheet = false
@@ -45,6 +49,7 @@ struct HomeView: View {
             }
             .sheet(isPresented: $showingLoginSignupSheet) {
                 LoginSignupView()
+                .environmentObject(userSettings)
             }
         }
     }

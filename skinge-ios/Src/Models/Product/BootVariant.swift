@@ -7,10 +7,16 @@
 
 import Foundation
 
-struct BootVariant: Codable {
-
+struct BootVariant: ProductVariant, Codable {
+    
     // MARK: - Variables
     
-    var size: Double?
+    var boot: Boot?
+    var mondoSize: Double?
+    var lastWidth: Int?
+    var bootSoleLength: Int?
+    var individualWeight: Int?
+    var baseProduct: Bool
+    var id: Int
     
 }

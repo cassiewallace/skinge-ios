@@ -10,6 +10,13 @@ import Foundation
 struct SkiBindingVariant: Codable {
     
     // MARK: - Variables
+    
+    var binding: SkiBinding?
     var size: String?
+    var variationType: String?
+    var brakeWidth: Int?
+    var individualWeight: Int?
+    var baseProduct: Bool
+    var id: Int?
     
 }
