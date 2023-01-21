@@ -9,6 +9,10 @@ import Foundation
 
 protocol Product: Codable {
 
+    // MARK: - Associated Types
+    
+    associatedtype ProductVariant
+
     // MARK: - Variables
     
     var year: String { get set }
@@ -18,6 +22,7 @@ protocol Product: Codable {
     var recommendedUse: String? { get set }
     var warranty: String? { get set }
     var womensSpecific: Bool? { get set }
+    var variants: Array<ProductVariant>? { get set }
     var id: Int { get set }
     
 }

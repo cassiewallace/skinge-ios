@@ -9,6 +9,9 @@ import Foundation
 
 struct SkiBinding: Product, Codable {
 
+    // MARK: - Typealiases
+    typealias ProductVariant = SkiBindingVariant
+
     // MARK: - Variables
     
     var year: String
@@ -18,7 +21,7 @@ struct SkiBinding: Product, Codable {
     var recommendedUse: String?
     var warranty: String?
     var womensSpecific: Bool?
-    var variants: [SkiBindingVariant]?
+    var variants: Array<ProductVariant>?
     var id: Int
     
 }
