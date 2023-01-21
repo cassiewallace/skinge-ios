@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import KeychainAccess
 
 class DataStore {
 
-    // MARK: - Methods
+    // MARK: - Public Variables
+    
+    public let keychain = Keychain(service: "cassiewallace.skinge-ios")
+
+    // MARK: - Public Methods
     
     /// Log in a user.
     /// - Parameters:
@@ -24,13 +29,20 @@ class DataStore {
         }
     }
     
+    /// Log out the current user.
+    /// - Parameters:
+    ///   - user: The user's email and password.
+    ///   - completionHandler: Function to run once the data has been retrieved.
+    public func logout() {
+        keychain["skinge-ios-access-token"] = nil
+    }
+    
     /// Retrieve all of a particular product.
     /// - Parameters:
     ///   - productType: Category of product to retrieve.
     ///   - completionHandler: Function to run once the data has been retrieved.
     public func getProducts<T: Decodable>(_ productType: Constants.ProductType, completionHandler: @escaping ([T]?) -> Void) {
-        let url = Constants.API.baseURL +
-                    Constants.API.productsPath +
+        let url = Constants.API.baseURL + Constants.API.productsPath +
                     "/\(productType.rawValue)/"
 
         HTTPClient.get(url) { products in

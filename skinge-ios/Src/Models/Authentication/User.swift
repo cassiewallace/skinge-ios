@@ -9,13 +9,6 @@ import Foundation
 
 struct User: Encodable {
 
-    // MARK: - Enumerations
-
-    enum LoginState: Codable {
-        case loggedIn
-        case loggedOut
-    }
-
     // MARK: - Variables
     
     var email: String

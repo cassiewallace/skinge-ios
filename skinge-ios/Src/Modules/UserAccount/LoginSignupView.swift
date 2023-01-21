@@ -13,6 +13,7 @@ struct LoginSignupView: View {
     
     @ObservedObject var viewModel = LoginSignupViewModel()
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var userSettings: UserSettings
 	@State var username: String = ""
     @State var password: String = ""
     
@@ -33,6 +34,7 @@ struct LoginSignupView: View {
             case .loggedOut: loginView
             }
         }
+        .onAppear { viewModel.load(with: userSettings) }
     }
     
     var loginView: some View {

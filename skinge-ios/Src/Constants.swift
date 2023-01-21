@@ -19,6 +19,10 @@ struct Constants {
             static let signup = "/auth/signup/"
         }
         
+        struct User {
+            static let setups = "/user/setups/"
+        }
+        
     }
     
     enum ProductType: String, CaseIterable {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Ski: Product, Codable {
+struct Ski: Product, Codable, Hashable {
     
     // MARK: - Variables
     

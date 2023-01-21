@@ -31,7 +31,7 @@ struct GearView: View {
                 ProductListView(selectedProductType: $selectedProductType)
                 Spacer()
             }
-            .navigationBarTitle("Gear", displayMode: .inline)
+            .navigationBarTitle("Gear")
         }
     }
 

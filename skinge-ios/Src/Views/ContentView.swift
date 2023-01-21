@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    // MARK: - Public Variables
+    
+    @StateObject var userSettings = UserSettings()
     
     // MARK: - Body
     
@@ -23,6 +27,12 @@ struct ContentView: View {
                     Image(systemName: "figure.skiing.downhill")
                     Text("Gear")
                 }
+            SetupsView()
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("Setups")
+                }
         }
+        .environmentObject(userSettings)
     }
 }

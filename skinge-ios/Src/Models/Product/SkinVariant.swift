@@ -7,9 +7,17 @@
 
 import Foundation
 
-struct SkinVariant: Codable {
+struct SkinVariant: ProductVariant, Codable {
 
     // MARK: - Variables
+    
+    var skin: Skin?
     var size: String?
+    var width: Int?
+    var lengthMin: Int?
+    var lengthMax: Int?
+    var individualWeight: Int?
+    var baseProduct: Bool
+    var id: Int
     
 }
