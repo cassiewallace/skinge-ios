@@ -9,6 +9,9 @@ import Foundation
 
 struct Boot: Product, Codable {
 
+    // MARK: - Typealiases
+    typealias ProductVariant = BootVariant    
+
     // MARK: - Variables
     
     var year: String
@@ -18,7 +21,7 @@ struct Boot: Product, Codable {
     var recommendedUse: String?
     var warranty: String?
     var womensSpecific: Bool?
-    var variants: [BootVariant]?
+    var variants: Array<ProductVariant>?
     var id: Int
     
 }

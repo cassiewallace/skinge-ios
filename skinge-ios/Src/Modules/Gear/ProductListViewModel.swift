@@ -17,7 +17,7 @@ class ProductListViewModel: ObservableObject {
     @Published var skins = [Skin]()
     var selectedProductType: Constants.ProductType = Constants.ProductType.skis
     
-    var products: Array<Product> {
+    var products: Array<any Product> {
         switch selectedProductType {
             case .bindings:
                 return bindings
