@@ -1,7 +1,7 @@
 # Xcode
 
 ## App Config
-*/.xcconfig
+*/*.xcconfig
 
 ## User settings
 xcuserdata/

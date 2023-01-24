@@ -27,7 +27,9 @@ struct SetupsView: View {
     }
     
     var setups: some View {
-        Text("Logged in")
+        List(viewModel.setups, id: \.id) { setup in
+            Text(setup.name)
+        }
         .navigationBarTitle("Setups")
     }
     

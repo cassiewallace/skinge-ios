@@ -10,6 +10,7 @@ import Foundation
 struct Skin: Product, Codable {
 
     // MARK: - Typealiases
+    
     typealias ProductVariant = SkinVariant
 
     // MARK: - Variables

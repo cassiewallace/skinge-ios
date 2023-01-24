@@ -10,6 +10,7 @@ import Foundation
 struct SkiBinding: Product, Codable {
 
     // MARK: - Typealiases
+    
     typealias ProductVariant = SkiBindingVariant
 
     // MARK: - Variables
