@@ -51,4 +51,15 @@ class DataStore {
         }
     }
     
+    /// Retrieve all of the current user's setups.
+    /// - Parameters:
+    ///   - completionHandler: Function to run once the data has been retrieved.
+    public func getSetups(completionHandler: @escaping ([Setup]?) -> Void) {
+        let url = Constants.API.baseURL + Constants.API.User.setups
+
+        HTTPClient.get(url) { setups in
+            completionHandler(setups)
+            return
+        }
+    }
 }

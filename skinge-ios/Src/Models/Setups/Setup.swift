@@ -13,19 +13,19 @@ struct Setup: Decodable {
     
     var name: String
     var totalWeight: Int
-    var ski: SkiVariant
-    var binding: SkiBindingVariant
-    var boot: BootVariant
-    var skin: SkinVariant
+    var ski: SkiVariant?
+    var binding: SkiBindingVariant?
+    var boot: BootVariant?
+    var skin: SkinVariant?
     var id: Int
     
     enum CodingKeys: String, CodingKey {
         case name
         case totalWeight
-        case ski = "ski_variant"
-        case binding = "binding_variant"
-        case boot = "boot_variant"
-        case skin = "skin_variant"
+        case ski = "skiVariant"
+        case binding = "bindingVariant"
+        case boot = "bootVariant"
+        case skin = "skinVariant"
         case id
     }
     

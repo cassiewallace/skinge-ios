@@ -10,6 +10,7 @@ import Foundation
 struct Boot: Product, Codable {
 
     // MARK: - Typealiases
+    
     typealias ProductVariant = BootVariant    
 
     // MARK: - Variables

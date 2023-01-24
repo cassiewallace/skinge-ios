@@ -232,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				CBBAE56C296361E100F374F1 /* User.swift */,
+				CBF0EA4B297A0B08002452C9 /* UserSettings.swift */,
 				CBBAE5702963786200F374F1 /* AccessToken.swift */,
 			);
 			path = Authentication;
@@ -318,7 +319,6 @@
 			children = (
 				CBBEE785290AED1600BE850B /* HTTPClient.swift */,
 				CBBEE787290AED9600BE850B /* DataStore.swift */,
-				CBF0EA4B297A0B08002452C9 /* UserSettings.swift */,
 				CB2D22B92929587300C5748D /* Extensions */,
 			);
 			path = Utilities;

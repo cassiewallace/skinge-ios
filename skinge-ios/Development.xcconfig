@@ -8,4 +8,4 @@
 // MARK: - Development Configuration Settings
 
 BASE_URL = localhost:8080
-API_KEY = Bearer 5534c045777159532e83b84aa3aa5d5c2c28b037
+API_KEY = 5534c045777159532e83b84aa3aa5d5c2c28b037
